@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, ScrollView, Image, StyleSheet } from 'react-native';
 import { Card } from 'react-native-elements';
-import { CAMPSITES } from '../shared/campsites';
 import { PROMOTIONS } from '../shared/promotions';
 import { SPONSORS } from '../shared/sponsors';
 
@@ -10,7 +9,7 @@ function RenderItem({item}) {
     if (item) {
         return (
             <Card
-                featuredTitle={item.name}
+                featuredTitle={item.displayName ? item.name : ''}
                 image={item.image}>
                 <Text
                 style={{margin: 10}}>
@@ -26,7 +25,6 @@ class Home extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            campsites: CAMPSITES,
             promotions: PROMOTIONS,
             sponsors: SPONSORS
         };
