@@ -1,8 +1,20 @@
+import image0 from '../assets/images/attractions/nisqually-refuge-thumbnail.jpg';
+import image1 from '../assets/images/attractions/tumwater-falls-thumbnail.jpg';
+import image2 from '../assets/images/attractions/state-capitol-thumbnail.jpg';
+import image3 from '../assets/images/attractions/farmers-market-thumbnail.jpg';
+import image4 from '../assets/images/attractions/childrens-museum-thumbnail.jpg';
+import image5 from '../assets/images/attractions/priest-point-thumbnail.jpg';
+import image6 from '../assets/images/attractions/percival-landing-thumbnail.jpg';
+import image7 from '../assets/images/attractions/tolmie-park-thumbnail.jpg';
+import image8 from '../assets/images/attractions/mima-mounds-thumbnail.jpg';
+import image9 from '../assets/images/attractions/monarch-sculpture-thumbnail.jpg';
+
+
 export const ATTRACTIONS = [
     {
         id: 0,
         name: 'Nisqually National Wildlife Refuge',
-        image: '../assets/images/attractions/nisqually-refuge-thumbnail.jpg',
+        image: image0,
         rating: 4.9,
         address: "100 Brown Farm Rd, Olympia, WA 98516",
         type:"Park",
@@ -64,7 +76,7 @@ export const ATTRACTIONS = [
     {
         id: 1,
         name: 'Tumwater Falls',
-        image: '../assets/images/attractions/tumwater-falls-thumbnail.jpg',
+        image: image1,
         rating: 4.5,
         address: "110 Deschutes Way SW, Tumwater, WA 98501",
         type:"Park",
@@ -126,7 +138,7 @@ export const ATTRACTIONS = [
     {
         id: 2,
         name:'Washington State Capitol',
-        image: '../assets/images/attractions/state-capitol-thumbnail.jpg',
+        image: image2,
         rating: 4.3,
         address: "416 Sid Snyder Ave SW, Olympia, WA 98504",
         type:"Tour", 
@@ -188,7 +200,7 @@ export const ATTRACTIONS = [
     {
         id: 3,
         name:'Olympia Farmers Market',
-        image: '../assets/images/attractions/farmers-market-thumbnail.jpg',
+        image: image3,
         rating: 4.2,
         address: "700 Capitol Way N, Olympia, WA 98501",
         type:"Shopping", 
@@ -198,7 +210,7 @@ export const ATTRACTIONS = [
     {
         id: 4,
         name:"Hands On Children's Museum",
-        image: '../assets/images/attractions/childrens-museum-thumbnail.jpg',
+        image: image4,
         rating: 4.2,
         address: "404 Jefferson St NE, Olympia, WA 98501",
         type:"Museum", 
@@ -255,7 +267,7 @@ export const ATTRACTIONS = [
     {
         id: 5,
         name:"Priest Point Park",
-        image: '../assets/images/attractions/priest-point-thumbnail.jpg',
+        image: image5,
         rating: 4,
         address: "2600 East Bay Dr NE, Olympia, WA 98506",
         type:"Park",
@@ -265,7 +277,7 @@ export const ATTRACTIONS = [
     {
         id: 6,
         name:"Percival Landing",
-        image: '../assets/images/attractions/percival-landing-thumbnail.jpg',
+        image: image6,
         rating: 3.9,
         address: "217 Thurson Ave NW, Olympia, WA 98501",
         type:"Park",
@@ -275,7 +287,7 @@ export const ATTRACTIONS = [
     {
         id: 7,
         name:"Tolmie State Park",
-        image: '../assets/images/attractions/tolmie-park-thumbnail.jpg',
+        image: image7,
         rating: 3.8,
         address: "7730 61st Ave NE, Olympia, WA 98506",
         type:"Park",
@@ -285,7 +297,7 @@ export const ATTRACTIONS = [
     {
         id: 8,
         name:"Mima Mounds",
-        image: '../assets/images/attractions/mima-mounds-thumbnail.jpg',
+        image: image8,
         rating: 3.7,
         address: "12315 Waddell Creek Rd SW, Olympia, WA 98512",
         type:"Park",
@@ -332,7 +344,7 @@ export const ATTRACTIONS = [
     {
         id: 9,
         name:"Monarch Sculpture Park",
-        image: '../assets/images/attractions/monarch-sculpture-thumbnail.jpg',
+        image: image9,
         rating: 3.5,
         address: "8431 Waldrick Rd SE, Tenino, WA 98589",
         type:"Park",

@@ -24,7 +24,7 @@ class Guide extends Component {
                     title={item.name}
                     subtitle={item.description}
                     onPress={() => navigate('HighlightInfo', { highlightId: item.id })}
-                    leftAvatar={{ source: require('./images/react-lake.jpg')}}
+                    leftAvatar={{ source: require('../assets/images/OlympiaTenOval.png')}}
                 />
             );
         };

@@ -5,11 +5,12 @@ import { ATTRACTIONS } from '../shared/attractions';
 
 function RenderHighlight({highlight}) {
     if (highlight) {
+        
         return (
             
             <Card 
                 featuredTitle={highlight.name}
-                image={require( {highlight.image} )}
+                image={highlight.image}
             >
                 <Text style={{margin: 10}}>
                     {highlight.description}
