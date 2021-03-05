@@ -35,8 +35,7 @@ class HighlightInfo extends Component {
     }
 
     render() {
-        const highlightId = this.props.navigation.getParam('highlightId');
-        const highlight = this.state.highlights.filter(highlight => highlight.id === highlightId)[0];
+        const highlight = this.props.navigation.getParam('highlight');
         return <RenderHighlight highlight={highlight} />;
     }
 }

@@ -1,8 +1,19 @@
+import image0 from '../assets/images/events/harbor-days-thumbnail.jpg';
+import image1 from '../assets/images/events/thurstonco-fair-thumbnail.jpg';
+import image2 from '../assets/images/events/olympia-brew-thumbnail.jpg';
+import image3 from '../assets/images/events/olympia-airshow-thumbnail.jpg';
+import image4 from '../assets/images/events/nwpirate-festival-thumbnail.jpg';
+import image5 from '../assets/images/events/stmartins-food-thumbnail.jpg';
+import image6 from '../assets/images/events/woodenboat-fest-thumbnail.jpg';
+import image7 from '../assets/images/events/freedom-fest-thumbnail.jpg';
+import image8 from '../assets/images/events/arts-walk-thumbnail.jpg';
+import image9 from '../assets/images/events/tumwater-brewfest-thumbnail.jpg';
+
 export const EVENTS = [
     {
         id: 0,
         name: 'Olympia Harbor Days Festival',
-        image: 'assets/images/events/harbor-days-thumbnail.jpg',
+        image: image0,
         rating: 4.7,
         address: "222 Columbia St. NW, Olympia, WA 98501",
         type: "Outdoor Festival",
@@ -66,7 +77,7 @@ export const EVENTS = [
     {
         id: 1,
         name: 'Thurston County Fair',
-        image: 'assets/images/events/thurstonco-fair-thumbnail.jpg',
+        image: image1,
         rating: 4.5,
         address: "3054 Carpenter Rd SE, Lacey, WA 98503",
         type: "County Fair",
@@ -130,7 +141,7 @@ export const EVENTS = [
     {
         id: 2,
         name:"Olympia Brew Fest",
-        image: 'assets/images/events/olympia-brew-thumbnail.jpg',
+        image: image2,
         rating: 4.4,
         address: "701 Columbia St NW, Olympia, WA 98501",
         type: "Outdoor Festival",
@@ -194,7 +205,7 @@ export const EVENTS = [
     {
         id: 3,
         name:'Olympic Air Show',
-        image: 'assets/images/events/olympia-airshow-thumbnail.jpg',
+        image: image3,
         rating: 4.4,
         address: "7637-A Old Hwy 99, Olympia, WA 98501",
         type: "Outdoor Festival",
@@ -258,7 +269,7 @@ export const EVENTS = [
     {
         id: 4,
         name:"Northwest Pirate Festival",
-        image: 'assets/images/events/nwpirate-festival-thumbnail.jpg',
+        image: image4,
         rating: 4.3,
         address: "3054 Carpenter Rd SE, Lacey, WA 98503",
         type: "Outdoor Festival",
@@ -322,7 +333,7 @@ export const EVENTS = [
     {
         id: 5,
         name:"St. Martin's Food & Wine Festival",
-        image: 'assets/images/events/stmartins-food-thumbnail.jpg',
+        image: image5,
         rating: 4.2,
         address: "5000 Abbey Way SE, Lacey, WA 98503",
         type: "Indoor Festival",
@@ -334,7 +345,7 @@ export const EVENTS = [
     {
         id: 6,
         name:"Olympia Wooden Boat Fair",
-        image: 'assets/images/events/woodenboat-fest-thumbnail.jpg',
+        image: image6,
         rating: 4.1,
         address: "217 Thurston Ave NW, Olympia, WA 98501",
         type: "Outdoor Festival",
@@ -346,7 +357,7 @@ export const EVENTS = [
     {
         id: 7,
         name:"JBLM Freedom Fest",
-        image: 'assets/images/events/freedom-fest-thumbnail.jpg',
+        image: image7,
         rating: 4.0,
         address: "Joint Base Lewis-McChord, WA 98433",
         type: "Outdoor Festival",
@@ -395,7 +406,7 @@ export const EVENTS = [
     {
         id: 8,
         name:"Olympia Arts Walk",
-        image: 'assets/images/events/arts-walk-thumbnail.jpg',
+        image: image8,
         rating: 3.8,
         address: "5th Avenue, Downtown Olympia, WA 98501",
         type: "Outdoor Festival",
@@ -407,7 +418,7 @@ export const EVENTS = [
     {
         id: 9,
         name:"Tumwater Artesian Brewfest",
-        image: 'assets/images/events/tumwater-brewfest-thumbnail.jpg',
+        image: image9,
         rating: 3.7,
         address: "555 Israel Road SW, Tumwater, WA 98501",
         type: "Outdoor Festival",

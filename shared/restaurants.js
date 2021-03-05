@@ -1,8 +1,20 @@
+import image0 from '../assets/images/restaurants/cascadia-grill-thumbnail.jpg';
+import image1 from '../assets/images/restaurants/iron-rabbit-thumbnail.jpg';
+import image2 from '../assets/images/restaurants/anthonys-homeport-thumbnail.jpg';
+import image3 from '../assets/images/restaurants/buddbay-cafe-thumbnail.jpg';
+import image4 from '../assets/images/restaurants/mediterranean-breeze-thumbnail.jpg';
+import image5 from '../assets/images/restaurants/basilico-ristorante-thumbnail.jpg';
+import image6 from '../assets/images/restaurants/dockside-bistro-thumbnail.jpg';
+import image7 from '../assets/images/restaurants/tugboat-annies-thumbnail.jpg';
+import image8 from '../assets/images/restaurants/gardners-seafood-thumbnail.jpg';
+import image9 from '../assets/images/restaurants/anthonys-hearthfire-thumbnail.jpg';
+
+
 export const RESTAURANTS = [
     {
         id: 0,
         name: 'Cascadia Grill',
-        image: 'assets/images/restaurants/cascadia-grill-thumbnail.jpg',
+        image: image0,
         rating: 4.7,
         address: "200 4th Ave W, Olympia, WA 98501",
         type: "Pacific Northwest",
@@ -65,7 +77,7 @@ export const RESTAURANTS = [
     {
         id: 1,
         name: 'Iron Rabbit Restaurant & Bar',
-        image: 'assets/images/restaurants/iron-rabbit-thumbnail.jpg',
+        image: image1,
         rating: 4.6,
         address: "2103 Harrison Ave NW, Olympia, WA 98502",
         type: "Pacific Northwest",
@@ -128,7 +140,7 @@ export const RESTAURANTS = [
     {
         id: 2,
         name:"Anthony's Homeport Olympia",
-        image: 'assets/images/restaurants/anthonys-homeport-thumbnail.jpg',
+        image: image2,
         rating: 4.4,
         address: "704 Columbia St NW, Olympia, WA 98501",
         type: "Seafood",
@@ -139,7 +151,7 @@ export const RESTAURANTS = [
     {
         id: 3,
         name:'Budd Bay Cafe',
-        image: 'assets/images/restaurants/buddbay-cafe-thumbnail.jpg',
+        image: image3,
         rating: 4.4,
         address: "525 Columbia St NW, Olympia, WA 98501",
         type: "Seafood",
@@ -150,7 +162,7 @@ export const RESTAURANTS = [
     {
         id: 4,
         name:"Mediterranean Breeze",
-        image: 'assets/images/restaurants/mediterranean-breeze-thumbnail.jpg',
+        image: image4,
         rating: 4.3,
         address: "2302 Harrison Ave NW, Olympia, WA 98502",
         type: "Mediterranean",
@@ -161,7 +173,7 @@ export const RESTAURANTS = [
     {
         id: 5,
         name:"Basilico Ristorante",
-        image: 'assets/images/restaurants/basilico-ristorante-thumbnail.jpg',
+        image: image5,
         rating: 4.3,
         address: "507 Capitol Way S #A, Olympia, WA 98501",
         type: "Italian",
@@ -198,7 +210,7 @@ export const RESTAURANTS = [
     {
         id: 6,
         name:"Dockside Bistro & Wine Bar",
-        image: 'assets/images/restaurants/dockside-bistro-thumbnail.jpg',
+        image: image6,
         rating: 4.2,
         address: "501 Columbia St NW Suite B, Olympia, WA 98501",
         type: "Fine Dining",
@@ -209,7 +221,7 @@ export const RESTAURANTS = [
     {
         id: 7,
         name:"Tugboat Annie's",
-        image: 'assets/images/restaurants/tugboat-annies-thumbnail.jpg',
+        image: image7,
         rating: 4.0,
         address: "2100 W Bay Dr NW, Olympia, WA 98502",
         type: "American",
@@ -252,7 +264,7 @@ export const RESTAURANTS = [
     {
         id: 8,
         name:"Gardner's Restaurant",
-        image: 'assets/images/restaurants/gardners-seafood-thumbnail.jpg',
+        image: image8,
         rating: 4.0,
         address: "111 Thurston Ave NW, Olympia, WA 98501",
         type: "Seafood",
@@ -263,7 +275,7 @@ export const RESTAURANTS = [
     {
         id: 9,
         name:"Anthony's Hearthfire Grill",
-        image: 'assets/images/restaurants/anthonys-hearthfire-thumbnail.jpg',
+        image: image9,
         rating: 3.9,
         address: "1675 Marine Dr NE, Olympia, WA 98501",
         type: "Seafood",
