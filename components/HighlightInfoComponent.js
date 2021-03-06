@@ -14,6 +14,9 @@ function RenderHighlight({highlight}) {
                 <Text style={{margin: 10}}>
                     {highlight.description}
                 </Text>
+                <Text style={{margin: 10}}>
+                    {highlight.address}
+                </Text>
                 <Rating imageSize={20} readonly startingValue={highlight.rating}  />
             </Card>
         );
