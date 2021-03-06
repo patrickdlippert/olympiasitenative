@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { FlatList } from 'react-native';
-import { ListItem } from 'react-native-elements';
+import { FlatList , View } from 'react-native';
+import { Tile } from 'react-native-elements';
 import { RESTAURANTS } from '../shared/restaurants';
 
 class Restaurants extends Component {
@@ -16,15 +16,29 @@ class Restaurants extends Component {
         title: 'Restaurants'
     };
 
+
+    FlatListItemSeparator = () => {
+        return (
+          <View
+            style={{
+              height: 2,
+              width: "100%",
+              backgroundColor: "#000",
+            }}
+          />
+        );
+      }
+
     render() {
         const { navigate } = this.props.navigation;
         const renderRestaurantsItem = ({item}) => {
             return (
-                <ListItem
+                <Tile
+                    imageSrc={item.image}
                     title={item.name}
-                    subtitle={item.description}
+                    featured caption={item.type}
                     onPress={() => navigate('HighlightInfo', { highlight: item }  )}
-                    leftAvatar={{ source: require('../assets/images/OlympiaTenOval.png')}}
+                    icon={{ name: 'play-circle', type: 'font-awesome' }}
                 />
             );
         };
@@ -34,6 +48,7 @@ class Restaurants extends Component {
                 data={this.state.restaurants}
                 renderItem={renderRestaurantsItem}
                 keyExtractor={item => item.id.toString()}
+                ItemSeparatorComponent = { this.FlatListItemSeparator }
             />
         );
     }

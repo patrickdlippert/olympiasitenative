@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { FlatList } from 'react-native';
-import { ListItem } from 'react-native-elements';
+import { FlatList , View } from 'react-native';
+import { Tile } from 'react-native-elements';
 import { EVENTS } from '../shared/events';
 
 class Events extends Component {
@@ -16,15 +16,28 @@ class Events extends Component {
         title: 'Events'
     };
 
+    FlatListItemSeparator = () => {
+        return (
+          <View
+            style={{
+              height: 2,
+              width: "100%",
+              backgroundColor: "#000",
+            }}
+          />
+        );
+      }
+
     render() {
         const { navigate } = this.props.navigation;
         const renderEventsItem = ({item}) => {
             return (
-                <ListItem
+                <Tile
+                    imageSrc={item.image}
                     title={item.name}
-                    subtitle={item.description}
+                    featured caption={item.type}
                     onPress={() => navigate('HighlightInfo', { highlight: item }  )}
-                    leftAvatar={{ source: require('../assets/images/OlympiaTenOval.png')}}
+                    icon={{ name: 'play-circle', type: 'font-awesome' }}
                 />
             );
         };
@@ -34,6 +47,7 @@ class Events extends Component {
                 data={this.state.events}
                 renderItem={renderEventsItem}
                 keyExtractor={item => item.id.toString()}
+                ItemSeparatorComponent = { this.FlatListItemSeparator }
             />
         );
     }
