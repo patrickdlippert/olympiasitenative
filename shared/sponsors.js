@@ -41,7 +41,7 @@ export const SPONSORS = [
         displayName: false,
         image: image3,
         featured: false,
-        description: "European Bakery in downtown Olympia.",
+        description: "European Bakery in downtown Olympia, WA",
         url: 'https://wagnersoly.com/'
     },
     {

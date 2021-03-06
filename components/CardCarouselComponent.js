@@ -12,8 +12,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#5637DD',
   },
   text: {
-    color: '#fff',
-    fontSize: 30,
+    margin: 10,
+    textAlign: 'center', 
+    fontSize: 15,
     fontWeight: 'bold',
   }
 });
@@ -26,7 +27,7 @@ function ConstructCard({resource}) {
                 featuredTitle={resource.displayName ? resource.name : ''}
                 image={resource.image}>
                 <Text
-                style={{margin: 10}}>
+                style={styles.text}>
                     {resource.description}
                 </Text>
             </Card>
