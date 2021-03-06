@@ -10,6 +10,11 @@ function RenderHighlight({highlight}) {
             <Card 
                 featuredTitle={highlight.name}
                 image={highlight.image}
+                imageStyle={{
+                    width: "100%",
+                    height: 200,
+                   resizeMode: 'cover'
+                  }}
             >
                 <Text style={{margin: 10}}>
                     {highlight.description}
