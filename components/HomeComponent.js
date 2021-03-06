@@ -3,6 +3,7 @@ import { View, Text, ScrollView, Image, StyleSheet } from 'react-native';
 import { Card } from 'react-native-elements';
 import { PROMOTIONS } from '../shared/promotions';
 import { SPONSORS } from '../shared/sponsors';
+import CardCarousel from './CardCarouselComponent';
 
 
 function RenderItem({item}) {
@@ -58,8 +59,9 @@ class Home extends Component {
                 </View>
                 <RenderItem 
                     item={this.state.promotions.filter(promotion => promotion.featured)[0]} />
-                <RenderItem 
-                    item={this.state.sponsors.filter(sponsor => sponsor.featured)[0]} />
+
+
+                <CardCarousel resources={this.state.sponsors} />
             </ScrollView>
         )
     }

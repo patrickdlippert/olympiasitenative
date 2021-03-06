@@ -32,7 +32,7 @@ export const SPONSORS = [
         displayName: false,
         image: image2,
         featured: true,
-        description: "Fresh local and exotic seafood in downtown Olympia",
+        description: "Fresh local and exotic seafood in Olympia",
         url: 'https://olympiaseafood.com/'
     },
     {
@@ -41,7 +41,7 @@ export const SPONSORS = [
         displayName: false,
         image: image3,
         featured: false,
-        description: "Non-profit organization presenting the stories from our past to enrich the present and inform the future of Olympia.",
+        description: "European Bakery in downtown Olympia.",
         url: 'https://wagnersoly.com/'
     },
     {
