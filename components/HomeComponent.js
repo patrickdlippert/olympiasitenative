@@ -4,7 +4,7 @@ import { Card } from 'react-native-elements';
 import { PROMOTIONS } from '../shared/promotions';
 import { SPONSORS } from '../shared/sponsors';
 import CardCarousel from './CardCarouselComponent';
-
+import { LinearGradient } from 'expo-linear-gradient';
 
 function RenderItem({item}) {
     if (item) {
@@ -44,18 +44,29 @@ class Home extends Component {
                 container:
                 {
                     flex: 1,
-                    backgroundColor: '#5637DD' // Set your own custom Color
-                }
+                    //backgroundColor: '#5637DD' // Set your own custom Color
+                },
+                linearGradient: {
+                    alignItems: 'center',
+                    justifyContent: 'center',
+
+                  }
             }
         );
 
         return (
             <ScrollView>
                 <View style = { styles.container }>
-                <Image 
-                    style={{flex:1, height: 150,  alignSelf: 'center'}}
-                    resizeMode="contain"
-                    source={require('../assets/images/OlympiaTopTen.png')} />
+                    <LinearGradient
+                        colors={['#5637DD', '#3046C5', '#60106B']}
+                        style={styles.linearGradient}
+                        start={{x: 0.7, y:0 }}
+                    >
+                        <Image 
+                            style={{flex:1, height: 150,  alignSelf: 'center'}}
+                            resizeMode="contain"
+                            source={require('../assets/images/OlympiaTopTen.png')} />
+                    </LinearGradient>
                 </View>
                 <RenderItem 
                     item={this.state.promotions.filter(promotion => promotion.featured)[0]} />

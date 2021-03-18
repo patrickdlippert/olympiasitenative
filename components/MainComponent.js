@@ -4,7 +4,8 @@ import Attractions from './AttractionsComponent';
 import Restaurants from './RestaurantsComponent';
 import Events from './EventsComponent';
 import HighlightInfo from './HighlightInfoComponent';
-import { View, Platform } from 'react-native';
+import { View, Platform, StyleSheet } from 'react-native';
+import { Icon } from 'react-native-elements';
 import { createStackNavigator } from 'react-navigation-stack';
 import { createDrawerNavigator } from 'react-navigation-drawer';
 import { createAppContainer } from 'react-navigation';
@@ -15,34 +16,45 @@ const AttractionNavigator = createStackNavigator(
         HighlightInfo: { screen: HighlightInfo }
     },
     {
-        initialRouteName: 'Attractions',
-        defaultNavigationOptions: {
+        defaultNavigationOptions: ({navigation}) => ({
             headerStyle: {
-                backgroundColor: '#5637DD'
+                backgroundColor: '#ad9750'
             },
             headerTintColor: '#fff',
             headerTitleStyle: {
                 color: '#fff'
-            }
-        }
+            },
+            headerLeft: <Icon
+                name='map-marker-alt'
+                type='font-awesome-5'
+                iconStyle={styles.stackIcon}
+                onPress={() => navigation.toggleDrawer()}
+            />
+        })
     }
-);
+)
 
 const RestaurantNavigator = createStackNavigator(
     {
-        Restaurants: { screen: Restaurants },
+        Restaurants: { screen: Restaurants},
         HighlightInfo: { screen: HighlightInfo }
     },
     {
-        navigationOptions: {
+        defaultNavigationOptions: ({navigation}) => ({
             headerStyle: {
-                backgroundColor: '#5637DD'
+                backgroundColor: '#ad9750'
             },
             headerTintColor: '#fff',
             headerTitleStyle: {
                 color: '#fff'
-            }
-        }
+            },
+            headerLeft: <Icon
+                name='utensils'
+                type='font-awesome-5'
+                iconStyle={styles.stackIcon}
+                onPress={() => navigation.toggleDrawer()}
+            />
+        })
     }
 );
 
@@ -52,15 +64,21 @@ const EventNavigator = createStackNavigator(
         HighlightInfo: { screen: HighlightInfo }
     },
     {
-        navigationOptions: {
+        defaultNavigationOptions: ({navigation}) => ({
             headerStyle: {
-                backgroundColor: '#5637DD'
+                backgroundColor: '#ad9750'
             },
             headerTintColor: '#fff',
             headerTitleStyle: {
                 color: '#fff'
-            }
-        }
+            },
+            headerLeft: <Icon
+                name='calendar'
+                type='font-awesome'
+                iconStyle={styles.stackIcon}
+                onPress={() => navigation.toggleDrawer()}
+            />
+        })
     }
 );
 
@@ -71,25 +89,78 @@ const HomeNavigator = createStackNavigator(
         Home: { screen: Home },
     },
     {
-        navigationOptions: {
+        defaultNavigationOptions: ({navigation}) => ({
             headerStyle: {
-                backgroundColor: '#5637DD'
+                backgroundColor: '#ad9750'
             },
             headerTintColor: '#fff',
             headerTitleStyle: {
                 color: '#fff'
-            }
-        }
+            },
+            headerLeft: <Icon
+                name='home'
+                type='font-awesome'
+                iconStyle={styles.stackIcon}
+                onPress={() => navigation.toggleDrawer()}
+            />
+        })
     }
 );
 
 const MainNavigator = createDrawerNavigator(
     {
-        Home: { screen: HomeNavigator },
-        Attractions: { screen: AttractionNavigator },
-        Restaurants: { screen: RestaurantNavigator },
-        Events: { screen: EventNavigator }
-
+        Home: { 
+            screen: HomeNavigator,
+            navigationOptions: {
+                drawerIcon: ({tintColor}) => (
+                    <Icon
+                        name='home'
+                        type='font-awesome'
+                        size={24}
+                        color={tintColor}
+                    />
+                )
+            }
+        },
+        Attractions: { 
+            screen: AttractionNavigator,
+            navigationOptions: {
+                drawerIcon: ({tintColor}) => (
+                    <Icon
+                        name='map-marker-alt'
+                        type='font-awesome-5'
+                        size={24}
+                        color={tintColor}
+                    />
+                )
+            }
+        },
+        Restaurants: { 
+            screen: RestaurantNavigator,
+            navigationOptions: {
+                drawerIcon: ({tintColor}) => (
+                    <Icon
+                        name='utensils'
+                        type='font-awesome-5'
+                        size={24}
+                        color={tintColor}
+                    />
+                )
+            }
+        },
+        Events: { 
+            screen: EventNavigator,
+            navigationOptions: {
+                drawerIcon: ({tintColor}) => (
+                    <Icon
+                        name='calendar'
+                        type='font-awesome'
+                        size={24}
+                        color={tintColor}
+                    />
+                )
+            }
+        }
     },
     {
         drawerBackgroundColor: '#CEC8FF'
@@ -113,5 +184,35 @@ class Main extends Component {
         );
     }
 }
+
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+    },
+    drawerHeader: {
+        backgroundColor: '#ad9750',
+        height: 140,
+        alignItems: 'center',
+        justifyContent: 'center',
+        flex: 1,
+        flexDirection: 'row'
+    },
+    drawerHeaderText: {
+        color: '#fff',
+        fontSize: 24,
+        fontWeight: 'bold'
+    },
+    drawerImage: {
+        margin: 10,
+        height: 60,
+        width: 60
+    },
+    stackIcon: {
+        marginLeft: 10,
+        color: '#fff',
+        fontSize: 24
+    }
+});
 
 export default Main;
