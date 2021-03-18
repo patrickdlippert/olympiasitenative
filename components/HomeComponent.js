@@ -49,7 +49,6 @@ class Home extends Component {
                 linearGradient: {
                     alignItems: 'center',
                     justifyContent: 'center',
-
                   }
             }
         );

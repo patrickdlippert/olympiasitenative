@@ -38,9 +38,14 @@ class HighlightInfo extends Component {
         };
     }
 
-    static navigationOptions = {
-        title: 'Highlight Information'
-    }
+ //   static navigationOptions = {
+ //       title: 'Highlight Information'
+ //   }
+
+    static navigationOptions = ({ navigation }) => {
+        const hlight = navigation.getParam('highlight');
+        return {headerTitle: `${hlight.name}`}
+     };
 
     render() {
         const highlight = this.props.navigation.getParam('highlight');
