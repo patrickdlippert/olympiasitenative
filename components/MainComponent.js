@@ -12,73 +12,88 @@ import { createAppContainer } from 'react-navigation';
 
 const AttractionNavigator = createStackNavigator(
     {
-        Attractions: { screen: Attractions },
+        Attractions: { 
+            screen: Attractions,
+            navigationOptions: ({navigation}) => ({
+                headerLeft: <Icon
+                    name='map-marker-alt'
+                    type='font-awesome-5'
+                    iconStyle={styles.stackIcon}
+                    onPress={() => navigation.toggleDrawer()}
+                />
+            })
+        },
         HighlightInfo: { screen: HighlightInfo }
     },
     {
-        defaultNavigationOptions: ({navigation}) => ({
+        initialRouteName: 'Attractions',
+        defaultNavigationOptions: {
             headerStyle: {
                 backgroundColor: '#ad9750'
             },
             headerTintColor: '#fff',
             headerTitleStyle: {
                 color: '#fff'
-            },
-            headerLeft: <Icon
-                name='map-marker-alt'
-                type='font-awesome-5'
-                iconStyle={styles.stackIcon}
-                onPress={() => navigation.toggleDrawer()}
-            />
-        })
+            }
+        }
     }
-)
+);
 
 const RestaurantNavigator = createStackNavigator(
     {
-        Restaurants: { screen: Restaurants},
+        Restaurants: { 
+            screen: Restaurants,
+            navigationOptions: ({navigation}) => ({
+                headerLeft: <Icon
+                    name='utensils'
+                    type='font-awesome-5'
+                    iconStyle={styles.stackIcon}
+                    onPress={() => navigation.toggleDrawer()}
+                />
+            })
+        },
         HighlightInfo: { screen: HighlightInfo }
     },
     {
-        defaultNavigationOptions: ({navigation}) => ({
+        initialRouteName: 'Restaurants',
+        defaultNavigationOptions: {
             headerStyle: {
                 backgroundColor: '#ad9750'
             },
             headerTintColor: '#fff',
             headerTitleStyle: {
                 color: '#fff'
-            },
-            headerLeft: <Icon
-                name='utensils'
-                type='font-awesome-5'
-                iconStyle={styles.stackIcon}
-                onPress={() => navigation.toggleDrawer()}
-            />
-        })
+            }
+        }
     }
 );
 
 const EventNavigator = createStackNavigator(
     {
-        Events: { screen: Events },
+        Events: { 
+            screen: Events,
+            navigationOptions: ({navigation}) => ({
+                headerLeft: <Icon
+                    name='calendar'
+                    type='font-awesome'
+                    iconStyle={styles.stackIcon}
+                    onPress={() => navigation.toggleDrawer()}
+                />
+            })
+        },
         HighlightInfo: { screen: HighlightInfo }
     },
     {
-        defaultNavigationOptions: ({navigation}) => ({
+        initialRouteName: 'Events',
+        defaultNavigationOptions: {
             headerStyle: {
                 backgroundColor: '#ad9750'
             },
             headerTintColor: '#fff',
             headerTitleStyle: {
                 color: '#fff'
-            },
-            headerLeft: <Icon
-                name='calendar'
-                type='font-awesome'
-                iconStyle={styles.stackIcon}
-                onPress={() => navigation.toggleDrawer()}
-            />
-        })
+            }
+        }
     }
 );
 
