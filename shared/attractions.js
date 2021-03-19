@@ -9,6 +9,57 @@ import image7 from '../assets/images/attractions/tolmie-park-thumbnail.jpg';
 import image8 from '../assets/images/attractions/mima-mounds-thumbnail.jpg';
 import image9 from '../assets/images/attractions/monarch-sculpture-thumbnail.jpg';
 
+import image0_0 from '../assets/images/attractions/gallery/nisqually-refuge-0.jpg';
+import image0_1 from '../assets/images/attractions/gallery/nisqually-refuge-1.jpg';
+import image0_2 from '../assets/images/attractions/gallery/nisqually-refuge-2.jpg';
+import image0_3 from '../assets/images/attractions/gallery/nisqually-refuge-3.jpg';
+import image0_4 from '../assets/images/attractions/gallery/nisqually-refuge-4.jpg';
+import image0_5 from '../assets/images/attractions/gallery/nisqually-refuge-5.jpg';
+import image0_6 from '../assets/images/attractions/gallery/nisqually-refuge-6.jpg';
+import image0_7 from '../assets/images/attractions/gallery/nisqually-refuge-7.jpg';
+import image0_8 from '../assets/images/attractions/gallery/nisqually-refuge-8.jpg';
+import image0_9 from '../assets/images/attractions/gallery/nisqually-refuge-9.jpg';
+
+import image1_0 from '../assets/images/attractions/gallery/tumwater-falls-0.jpg';
+import image1_1 from '../assets/images/attractions/gallery/tumwater-falls-1.jpg';
+import image1_2 from '../assets/images/attractions/gallery/tumwater-falls-2.jpg';
+import image1_3 from '../assets/images/attractions/gallery/tumwater-falls-3.jpg';
+import image1_4 from '../assets/images/attractions/gallery/tumwater-falls-4.jpg';
+import image1_5 from '../assets/images/attractions/gallery/tumwater-falls-5.jpg';
+import image1_6 from '../assets/images/attractions/gallery/tumwater-falls-6.jpg';
+import image1_7 from '../assets/images/attractions/gallery/tumwater-falls-7.jpg';
+import image1_8 from '../assets/images/attractions/gallery/tumwater-falls-8.jpg';
+import image1_9 from '../assets/images/attractions/gallery/tumwater-falls-9.jpg';
+
+import image2_0 from '../assets/images/attractions/gallery/state-capitol-0.jpg';
+import image2_1 from '../assets/images/attractions/gallery/state-capitol-1.jpg';
+import image2_2 from '../assets/images/attractions/gallery/state-capitol-2.jpg';
+import image2_3 from '../assets/images/attractions/gallery/state-capitol-3.jpg';
+import image2_4 from '../assets/images/attractions/gallery/state-capitol-4.jpg';
+import image2_5 from '../assets/images/attractions/gallery/state-capitol-5.jpg';
+import image2_6 from '../assets/images/attractions/gallery/state-capitol-6.jpg';
+import image2_7 from '../assets/images/attractions/gallery/state-capitol-7.jpg';
+import image2_8 from '../assets/images/attractions/gallery/state-capitol-8.jpg';
+import image2_9 from '../assets/images/attractions/gallery/state-capitol-9.jpg';
+
+import image4_0 from '../assets/images/attractions/gallery/childrens-museum-0.jpg';
+import image4_1 from '../assets/images/attractions/gallery/childrens-museum-1.jpg';
+import image4_2 from '../assets/images/attractions/gallery/childrens-museum-2.jpg';
+import image4_3 from '../assets/images/attractions/gallery/childrens-museum-3.jpg';
+import image4_4 from '../assets/images/attractions/gallery/childrens-museum-4.jpg';
+import image4_5 from '../assets/images/attractions/gallery/childrens-museum-5.jpg';
+import image4_6 from '../assets/images/attractions/gallery/childrens-museum-6.jpg';
+import image4_7 from '../assets/images/attractions/gallery/childrens-museum-7.jpg';
+import image4_8 from '../assets/images/attractions/gallery/childrens-museum-8.jpg';
+
+import image8_0 from '../assets/images/attractions/gallery/mima-mounds-0.jpg';
+import image8_1 from '../assets/images/attractions/gallery/mima-mounds-1.jpg';
+import image8_2 from '../assets/images/attractions/gallery/mima-mounds-2.jpg';
+import image8_3 from '../assets/images/attractions/gallery/mima-mounds-3.jpg';
+import image8_4 from '../assets/images/attractions/gallery/mima-mounds-4.jpg';
+import image8_5 from '../assets/images/attractions/gallery/mima-mounds-5.jpg';
+import image8_6 from '../assets/images/attractions/gallery/mima-mounds-6.jpg';
+
 
 export const ATTRACTIONS = [
     {
@@ -22,54 +73,74 @@ export const ATTRACTIONS = [
         description: "Located on the Nisqually River Delta in Southern Puget Sound, this refuge consists of three thousand acres of salt and freshwater marshes, grasslands and mixed forest habitats that provide a resting and nesting area for a wide variety of migratory birds. The Refuge features a one mile long boardwalk that extends out over the estuary, providing an up-close look at the wildlife and their ecosystems.",
          photos: [
           {
-            src: "../assets/images/attractions/gallery/nisqually-refuge-0.jpg",
-            width: 15,
-            height: 9
+            source: image0_0,
+            dimensions: {
+              width: 15,
+              height: 9
+            }
           },
           {
-            src: "../assets/images/attractions/gallery/nisqually-refuge-1.jpg",
-            width: 3,
-            height: 2
+            source: image0_1,
+            dimensions: {
+              width: 3,
+              height: 2
+            }
           },
           {
-            src: "../assets/images/attractions/gallery/nisqually-refuge-2.jpg",
-            width: 4,
-            height: 3
+            source: image0_2,
+            dimensions: {
+              width: 4,
+              height: 3
+            }
           },
           {
-            src: "../assets/images/attractions/gallery/nisqually-refuge-3.jpg",
-            width: 16,
-            height: 9
+            source: image0_3,
+            dimensions: {
+              width: 16,
+              height: 9
+            }
           },
           {
-            src: "../assets/images/attractions/gallery/nisqually-refuge-4.jpg",
-            width: 2,
-            height: 3
+            source: image0_4,
+            dimensions: {
+              width: 2,
+              height: 3
+            }
           },
           {
-            src: "../assets/images/attractions/gallery/nisqually-refuge-5.jpg",
-            width: 4,
-            height: 3
+            source: image0_5,
+            dimensions: {
+              width: 4,
+              height: 3
+            }
           },
           {
-            src: "../assets/images/attractions/gallery/nisqually-refuge-6.jpg",
-            width: 3,
-            height: 2
+            source: image0_6,
+            dimensions: {
+              width: 3,
+              height: 2
+            }
           },
           {
-            src: "../assets/images/attractions/gallery/nisqually-refuge-7.jpg",
-            width: 4,
-            height: 3
+            source: image0_7,
+            dimensions: {
+              width: 4,
+              height: 3
+            }
           },
           {
-            src: "../assets/images/attractions/gallery/nisqually-refuge-8.jpg",
-            width: 19,
-            height: 7
+            source: image0_8,
+            dimensions: {
+              width: 19,
+              height: 7
+            }
           },
           {
-            src: "../assets/images/attractions/gallery/nisqually-refuge-9.jpg",
-            width: 5,
-            height: 3
+            source: image0_9,
+            dimensions: {
+              width: 5,
+              height: 3
+            }
           }
         ]
     },
@@ -84,54 +155,74 @@ export const ATTRACTIONS = [
         description: 'The Tumwater Falls Park houses a one-half mile scenic loop trail along the Deschutes River and three cascading waterfalls, with interpretive signs featuring pictures that illustrate the history of the area. Glimpse the old Olympic Brewery from the lower falls. Built in 1906, it housed the works that made "...what was unqualifiably the best beer made on the West Coast," according to a local newspaper. What made it so great? Olympia owner Leopold Schmidt discovered some artesian wells and used that water to make his beer. People said it was of unparalleled quality.',
         photos: [
             {
-              src: "../assets/images/attractions/gallery/tumwater-falls-0.jpg",
-              width: 3,
-              height: 4
+              source: image1_0,
+              dimensions: {
+                width: 3,
+                height: 4
+              }
             },
             {
-              src: "../assets/images/attractions/gallery/tumwater-falls-1.jpg",
-              width: 9,
-              height: 5
+              source: image1_1,
+              dimensions: {
+                width: 9,
+                height: 5
+              }
             },
             {
-              src: "../assets/images/attractions/gallery/tumwater-falls-2.jpg",
-              width: 2,
-              height: 1
+              source: image1_2,
+              dimensions: {
+                width: 2,
+                height: 1
+              }
             },
             {
-              src: "../assets/images/attractions/gallery/tumwater-falls-3.jpg",
-              width: 9,
-              height: 16
+              source: image1_3,
+              dimensions: {
+                width: 9,
+                height: 16
+              }
             },
             {
-              src: "../assets/images/attractions/gallery/tumwater-falls-4.jpg",
-              width: 2,
-              height: 1
+              source: image1_4,
+              dimensions: {
+                width: 2,
+                height: 1
+              }
             },
             {
-              src: "../assets/images/attractions/gallery/tumwater-falls-5.jpg",
-              width: 16,
-              height: 9
+              source: image1_5,
+              dimensions: {
+                width: 16,
+                height: 9
+              }
             },
             {
-              src: "../assets/images/attractions/gallery/tumwater-falls-6.jpg",
-              width: 5,
-              height: 4
+              source: image1_6,
+              dimensions: {
+                width: 5,
+                height: 4
+              }
             },
             {
-              src: "../assets/images/attractions/gallery/tumwater-falls-7.jpg",
-              width: 3,
-              height: 2
+              source: image1_7,
+              dimensions: {
+                width: 3,
+                height: 2
+              }
             },
             {
-              src: "../assets/images/attractions/gallery/tumwater-falls-8.jpg",
-              width: 4,
-              height: 3
+              source: image1_8,
+              dimensions: {
+                width: 4,
+                height: 3
+              }
             },
             {
-              src: "../assets/images/attractions/gallery/tumwater-falls-9.jpg",
-              width: 4,
-              height: 3
+              source: image1_9,
+              dimensions: {
+                width: 4,
+                height: 3
+              }
             }
           ]
     },
@@ -146,54 +237,74 @@ export const ATTRACTIONS = [
         description: "The Washington State Capitol (or Legislative Building) in Olympia is the home of the government of the state of Washington. It contains chambers for the Washington State Legislature and offices for the governor, lieutenant governor, secretary of state and treasurer and is part of a campus consisting of several buildings. Buildings for the Washington Supreme Court, executive agencies and the Washington Governor's Mansion are part of the capitol campus. A visit to the Washington State Capitol Campus isn’t complete without a guided tour of the Legislative Building. These free, walking tours are offered daily and typically last about 50 minutes. You can also wander the Campus and take in the many memorials, gardens, and special events featured on the grounds.",
         photos: [
             {
-              src: "../assets/images/attractions/gallery/state-capitol-0.jpg",
-              width: 4,
-              height: 3
+              source: image2_0,
+              dimensions: {
+                width: 4,
+                height: 3
+              }
             },
             {
-              src: "../assets/images/attractions/gallery/state-capitol-1.jpg",
-              width: 3,
-              height: 4
+              source: image2_1,
+              dimensions: {
+                width: 3,
+                height: 4
+              }
             },
             {
-              src: "../assets/images/attractions/gallery/state-capitol-2.jpg",
-              width: 4,
-              height: 3
+              source: image2_2,
+              dimensions: {
+                width: 4,
+                height: 3
+              }
             },
             {
-              src: "../assets/images/attractions/gallery/state-capitol-3.jpg",
-              width: 9,
-              height: 16
+              source: image2_3,
+              dimensions: {
+                width: 9,
+                height: 16
+              }
             },
             {
-              src: "../assets/images/attractions/gallery/state-capitol-4.jpg",
-              width: 6,
-              height: 1
+              source: image2_4,
+              dimensions: {
+                width: 6,
+                height: 1
+              }
             },
             {
-              src: "../assets/images/attractions/gallery/state-capitol-5.jpg",
-              width: 3,
-              height: 2
+              source: image2_5,
+              dimensions: {
+                width: 3,
+                height: 2
+              }
             },
             {
-              src: "../assets/images/attractions/gallery/state-capitol-6.jpg",
-              width: 3,
-              height: 2
+              source: image2_6,
+              dimensions: {
+                width: 3,
+                height: 2
+              }
             },
             {
-              src: "../assets/images/attractions/gallery/state-capitol-7.jpg",
-              width: 5,
-              height: 7
+              source: image2_7,
+              dimensions: {
+                width: 5,
+                height: 7
+              }
             },
             {
-              src: "../assets/images/attractions/gallery/state-capitol-8.jpg",
-              width: 1,
-              height: 1
+              source: image2_8,
+              dimensions: {
+                width: 1,
+                height: 1
+              }
             },
             {
-              src: "../assets/images/attractions/gallery/state-capitol-9.jpg",
-              width: 2,
-              height: 1
+              source: image2_9,
+              dimensions: {
+                width: 2,
+                height: 1
+              }
             }
           ]
     },
@@ -218,49 +329,67 @@ export const ATTRACTIONS = [
         description: "The museum has 28,000 square feet of indoor space and was built in November 2012. Its eight themed galleries create a sense of wonder and delight children who learn about science, technology, engineering, art and math through 150+ hands-on exhibits. The museum also has a half-acre Outdoor Discovery Center, one of the nation’s pilot sites for the Going Wild Program, where children can reconnect with nature. Hands On can also be the setting for your most memorable event ever! With a half-acre of indoor space, in addition to a half-acre outdoor space complete with a beach, garden and lighthouse lookout, the museum is a unique venue your guests will love. ",
         photos: [
             {
-              src: "../assets/images/attractions/gallery/childrens-museum-0.jpg",
-              width: 3,
-              height: 2
-            },
-            {
-              src: "../assets/images/attractions/gallery/childrens-museum-1.jpg",
-              width: 9,
-              height: 7
-            },
-            {
-              src: "../assets/images/attractions/gallery/childrens-museum-2.jpg",
-              width: 9,
-              height: 7
-            },
-            {
-              src: "../assets/images/attractions/gallery/childrens-museum-3.jpg",
-              width: 3,
-              height: 2
-            },
-            {
-              src: "../assets/images/attractions/gallery/childrens-museum-4.jpg",
-              width: 3,
-              height: 2
-            },
-            {
-              src: "../assets/images/attractions/gallery/childrens-museum-5.jpg",
-              width: 3,
-              height: 4
-            },
-            {
-              src: "../assets/images/attractions/gallery/childrens-museum-6.jpg",
-              width: 5,
-              height: 3
-            },
-            {
-                src: "../assets/images/attractions/gallery/childrens-museum-7.jpg",
-                width: 4,
-                height: 3
-            },
-            {
-                src: "../assets/images/attractions/gallery/childrens-museum-8.jpg",
+              source: image4_0,
+              dimensions: {
                 width: 3,
                 height: 2
+              }
+            },
+            {
+              source: image4_1,
+              dimensions: {
+                width: 9,
+                height: 7
+              }
+            },
+            {
+              source: image4_2,
+              dimensions: {
+                width: 9,
+                height: 7
+              }
+            },
+            {
+              source: image4_3,
+              dimensions: {
+                width: 3,
+                height: 2
+              }
+            },
+            {
+              source: image4_4,
+              dimensions: {
+                width: 3,
+                height: 2
+              }
+            },
+            {
+              source: image4_5,
+              dimensions: {
+                width: 3,
+                height: 4
+              }
+            },
+            {
+              source: image4_6,
+              dimensions: {
+                width: 5,
+                height: 3
+              }
+            },
+            {
+                source: image4_7,
+                dimensions: {
+                  width: 4,
+                  height: 3
+                }
+            },
+            {
+                source: image4_8,
+                dimensions: {
+                  width: 3,
+                  height: 2
+                }
             }
           ]
     },
@@ -305,39 +434,53 @@ export const ATTRACTIONS = [
         description: "These mysterious mounds inspire imagination and speculation among visitors. With a half-mile ADA accessible path and another two miles of more rugged wandering, the Mima Mounds are a great destination for many hikers. Just what created these odd, bubble-like mounds southwest of Olympia is a mystery. And this puzzle is one with proposed answers ranging from giant gophers to earthquakes and glaciation, as well as extraterrestrial activity. Whatever the answer, the Mima Mounds Natural Area Preserve is a great place for walking or hiking, particularly in the spring when the wildflowers are in bloom on the rolling hills.",
         photos: [
             {
-              src: "../assets/images/attractions/gallery/mima-mounds-0.jpg",
-              width: 16,
-              height: 9
+              source: image8_0,
+              dimensions: {
+                width: 16,
+                height: 9
+              }
             },
             {
-              src: "../assets/images/attractions/gallery/mima-mounds-1.jpg",
-              width: 1,
-              height: 1
+              source: image8_1,
+              dimensions: {
+                width: 1,
+                height: 1
+              }
             },
             {
-              src: "../assets/images/attractions/gallery/mima-mounds-2.jpg",
-              width: 4,
-              height: 3
+              source: image8_2,
+              dimensions: {
+                width: 4,
+                height: 3
+              }
             },
             {
-              src: "../assets/images/attractions/gallery/mima-mounds-3.jpg",
-              width: 17,
-              height: 5
+              source: image8_3,
+              dimensions: {
+                width: 17,
+                height: 5
+              }
             },
             {
-              src: "../assets/images/attractions/gallery/mima-mounds-4.jpg",
-              width: 16,
-              height: 9
+              source: image8_4,
+              dimensions: {
+                width: 16,
+                height: 9
+              }
             },
             {
-              src: "../assets/images/attractions/gallery/mima-mounds-5.jpg",
-              width: 1,
-              height: 1
+              source: image8_5,
+              dimensions: {
+                width: 1,
+                height: 1
+              }
             },
             {
-              src: "../assets/images/attractions/gallery/mima-mounds-6.jpg",
-              width: 4,
-              height: 3
+              source: image8_6,
+              dimensions: {
+                width: 4,
+                height: 3
+              }
             }
           ]
     },

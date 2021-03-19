@@ -9,6 +9,41 @@ import image7 from '../assets/images/restaurants/tugboat-annies-thumbnail.jpg';
 import image8 from '../assets/images/restaurants/gardners-seafood-thumbnail.jpg';
 import image9 from '../assets/images/restaurants/anthonys-hearthfire-thumbnail.jpg';
 
+import image0_0 from '../assets/images/restaurants/gallery/cascadia-grill-0.jpg';
+import image0_1 from '../assets/images/restaurants/gallery/cascadia-grill-1.jpg';
+import image0_2 from '../assets/images/restaurants/gallery/cascadia-grill-2.jpg';
+import image0_3 from '../assets/images/restaurants/gallery/cascadia-grill-3.jpg';
+import image0_4 from '../assets/images/restaurants/gallery/cascadia-grill-4.jpg';
+import image0_5 from '../assets/images/restaurants/gallery/cascadia-grill-5.jpg';
+import image0_6 from '../assets/images/restaurants/gallery/cascadia-grill-6.jpg';
+import image0_7 from '../assets/images/restaurants/gallery/cascadia-grill-7.jpg';
+import image0_8 from '../assets/images/restaurants/gallery/cascadia-grill-8.jpg';
+import image0_9 from '../assets/images/restaurants/gallery/cascadia-grill-9.jpg';
+
+import image1_0 from "../assets/images/restaurants/gallery/iron-rabbit-0.png";
+import image1_1 from "../assets/images/restaurants/gallery/iron-rabbit-1.jpg";
+import image1_2 from "../assets/images/restaurants/gallery/iron-rabbit-2.jpg";
+import image1_3 from "../assets/images/restaurants/gallery/iron-rabbit-3.jpg";
+import image1_4 from "../assets/images/restaurants/gallery/iron-rabbit-4.jpg";
+import image1_5 from "../assets/images/restaurants/gallery/iron-rabbit-5.jpg";
+import image1_6 from "../assets/images/restaurants/gallery/iron-rabbit-6.jpg";
+import image1_7 from "../assets/images/restaurants/gallery/iron-rabbit-7.jpg";
+import image1_8 from "../assets/images/restaurants/gallery/iron-rabbit-8.jpg";
+import image1_9 from "../assets/images/restaurants/gallery/iron-rabbit-9.jpg";
+
+
+import image5_0 from "../assets/images/restaurants/gallery/basilico-ristorante-0.jpg"
+import image5_1 from "../assets/images/restaurants/gallery/basilico-ristorante-1.jpg"
+import image5_2 from "../assets/images/restaurants/gallery/basilico-ristorante-2.jpg"
+import image5_3 from "../assets/images/restaurants/gallery/basilico-ristorante-3.jpg"
+import image5_4 from "../assets/images/restaurants/gallery/basilico-ristorante-4.jpg"
+
+import image7_0 from "../assets/images/restaurants/gallery/tugboat-annies-0.jpg";
+import image7_1 from "../assets/images/restaurants/gallery/tugboat-annies-1.jpg";
+import image7_2 from "../assets/images/restaurants/gallery/tugboat-annies-2.jpg";
+import image7_3 from "../assets/images/restaurants/gallery/tugboat-annies-3.jpg";
+import image7_4 from "../assets/images/restaurants/gallery/tugboat-annies-4.jpg";
+import image7_5 from "../assets/images/restaurants/gallery/tugboat-annies-5.jpg";
 
 export const RESTAURANTS = [
     {
@@ -23,54 +58,84 @@ export const RESTAURANTS = [
         description: 'As owners Jef Dukes and Julie Guarino describe it, Cascadia Grill is "A Northwest brasserie, celebrating the independent spirit, food, wine, and craft beer of the Pacific Northwest. ...and Bigfoot!" Jef and his two brothers serve as the food visionaries in the kitchen. First and foremost, the brothers focused on flavor. That has followed them to Cascadia Grill where they have eschewed the fancy-looking meal for flavor-filled casual food. Cascadia Grill is a comfy corner haunt with handmade burgers, shakes & other nostalgic eats, plus an extensive tap list. Popular dishes include: Garlic Steak, Smoked Trout, Italian Sausage Burger and Bacon Wrapped Sirloin.',
         photos: [
             {
-              src: "../assets/images/restaurants/gallery/cascadia-grill-0.jpg",
-              width: 3,
-              height: 2
+              id: 0,
+              source: image0_0,
+              dimensions: {
+                width: 3,
+                height: 2
+              }
             },
             {
-              src: "../assets/images/restaurants/gallery/cascadia-grill-1.jpg",
-              width: 16,
-              height: 9
+              id: 1,
+              source: image0_1,
+              dimensions: {
+                width: 16,
+                height: 9
+              }
             },
             {
-              src: "../assets/images/restaurants/gallery/cascadia-grill-2.jpg",
-              width: 4,
-              height: 3
+              id: 2,
+              source: image0_2,
+              dimensions: {
+                width: 4,
+                height: 3
+              }
             },
             {
-              src: "../assets/images/restaurants/gallery/cascadia-grill-3.jpg",
-              width: 1,
-              height: 1
+              id: 3,
+              source: image0_3,
+              dimensions: {
+                width: 1,
+                height: 1
+              }
             },
             {
-              src: "../assets/images/restaurants/gallery/cascadia-grill-4.jpg",
-              width: 4,
-              height: 3
+              id: 4,
+              source: image0_4,
+              dimensions: {
+                width: 4,
+                height: 3
+              }
             },
             {
-              src: "../assets/images/restaurants/gallery/cascadia-grill-5.jpg",
-              width: 3,
-              height: 2
+              id: 5,
+              source: image0_5,
+              dimensions: {
+                width: 3,
+                height: 2
+              }
             },
             {
-              src: "../assets/images/restaurants/gallery/cascadia-grill-6.jpg",
-              width: 3,
-              height: 4
+              id: 6,
+              source: image0_6,
+              dimensions: {
+                width: 3,
+                height: 4
+              }
             },
             {
-              src: "../assets/images/restaurants/gallery/cascadia-grill-7.jpg",
-              width: 16,
-              height: 9
+              id: 7,
+              source: image0_7,
+              dimensions: {
+                width: 16,
+                height: 9
+              }
             },
             {
-              src: "../assets/images/restaurants/gallery/cascadia-grill-8.jpg",
-              width: 3,
-              height: 4
+              id: 8,
+              source: image0_8,
+              dimensions: {
+                width: 3,
+                height: 4
+              }
             },
             {
-              src: "../assets/images/restaurants/gallery/cascadia-grill-9.jpg",
-              width: 1,
-              height: 1
+              id: 9,
+              source: image0_9,
+              dimensions: {
+                width: 1,
+                height: 1
+              }
             }
           ]
     },
@@ -86,54 +151,74 @@ export const RESTAURANTS = [
         description: "The Iron Rabbit Restaurant & Bar is a family friendly restaurant located in Olympia’s Westside neighborhood. The restaurant’s open kitchen allows their team to show off their skills and dedication in preparing creative and inspired menu options for every palate. They feature a diverse list of quality, local, and distinctive spirits, beer, and wine, making the Iron Rabbit’s full service bar the perfect spot for date night or simply gathering with friends. Designed with the entire family in mind, there is something for everyone at the Iron Rabbit. Signature dishes include: Crab Bisque, Drunken Sailor (seafood in a spiced cream sauce) and Gourmet Burgers.",
         photos: [
           {
-            src: "../assets/images/restaurants/gallery/iron-rabbit-0.png",
-            width: 1,
-            height: 1
+            source: image1_0,
+            dimensions: {
+              width: 1,
+              height: 1
+            }
           },
           {
-            src: "../assets/images/restaurants/gallery/iron-rabbit-1.jpg",
-            width: 4,
-            height: 3
+            source: image1_1,
+            dimensions: {
+              width: 4,
+              height: 3
+            }
           },
           {
-            src: "../assets/images/restaurants/gallery/iron-rabbit-2.jpg",
-            width: 6,
-            height: 5
+            source: image1_2,
+            dimensions: {
+              width: 6,
+              height: 5
+            }
           },
           {
-            src: "../assets/images/restaurants/gallery/iron-rabbit-3.jpg",
-            width: 2,
-            height: 1
+            source: image1_3,
+            dimensions: {
+              width: 2,
+              height: 1
+            }
           },
           {
-            src: "../assets/images/restaurants/gallery/iron-rabbit-4.jpg",
-            width: 9,
-            height: 5
+            source: image1_4,
+            dimensions: {
+              width: 9,
+              height: 5
+            }
           },
           {
-            src: "../assets/images/restaurants/gallery/iron-rabbit-5.jpg",
-            width: 8,
-            height: 5
+            source: image1_5,
+            dimensions: {
+              width: 8,
+              height: 5
+            }
           },
           {
-            src: "../assets/images/restaurants/gallery/iron-rabbit-6.jpg",
-            width: 4,
-            height: 3
+            source: image1_6,
+            dimensions: {
+              width: 4,
+              height: 3
+            }
           },
           {
-            src: "../assets/images/restaurants/gallery/iron-rabbit-7.jpg",
-            width: 1,
-            height: 1
+            source: image1_7,
+            dimensions: {
+              width: 1,
+              height: 1
+            }
           },
           {
-            src: "../assets/images/restaurants/gallery/iron-rabbit-8.jpg",
-            width: 2,
-            height: 1
+            source: image1_8,
+            dimensions: {
+              width: 2,
+              height: 1
+            }
           },
           {
-            src: "../assets/images/restaurants/gallery/iron-rabbit-9.jpg",
-            width: 1,
-            height: 1
+            source: image1_9,
+            dimensions: {
+              width: 1,
+              height: 1
+            }
           }
         ]
     },
@@ -181,29 +266,39 @@ export const RESTAURANTS = [
         description: "Italian, untranslated. Basilico embraces the slow food movement, bringing old world recipes and traditional preparations to Olympia. All pasta and ravioli are made by hand and sauces cook for 3-4 hours. At Basilico, they take time and pride in preparing the closest thing to current cuisine in Italy as possible. It's a quaint, high-end restaurant with a gluten-free menu, handmade Northern Italian dishes & regional wines. Popular dishes are: Lamb Ravioli, Rack of Lamb, Pappardelle Al Cinghiale, and Asparagus Ravioli. An authentic get-away in the heart of downtown Olympia!",
         photos: [
           {
-            src: "../assets/images/restaurants/gallery/basilico-ristorante-0.jpg",
-            width: 4,
-            height: 3
+            source: image5_0,
+            dimensions: {
+              width: 4,
+              height: 3
+            }
           },
           {
-            src: "../assets/images/restaurants/gallery/basilico-ristorante-1.jpg",
-            width: 5,
-            height: 3
+            source: image5_1,
+            dimensions: {
+              width: 5,
+              height: 3
+            }
           },
           {
-            src: "../assets/images/restaurants/gallery/basilico-ristorante-2.jpg",
-            width: 4,
-            height: 3
+            source: image5_2,
+            dimensions: {
+              width: 4,
+              height: 3
+            }
           },
           {
-            src: "../assets/images/restaurants/gallery/basilico-ristorante-3.jpg",
-            width: 5,
-            height: 4
+            source: image5_3,
+            dimensions: {
+              width: 5,
+              height: 4
+            }
           },
           {
-            src: "../assets/images/restaurants/gallery/basilico-ristorante-4.jpg",
-            width: 4,
-            height: 3
+            source: image5_4,
+            dimensions: {
+              width: 4,
+              height: 3
+            }
           }
         ]
     },
@@ -230,34 +325,46 @@ export const RESTAURANTS = [
         description: "American Casual Dining on the Waterfront! Something for everyone & everyone is family. If you want to go where the staff remember your name, go here! Since 1999, Tugboat Annie's has been Olympia's fun place to look out onto the Great Pacific Northwest. Like Olympia itself, it's a pretty casual place, a great place for family and friends. Popular dishes: Fish & Chips, Crab Melt, Jambalaya, Fried Oysters and Prime Rib.",
         photos: [
           {
-            src: "../assets/images/restaurants/gallery/tugboat-annies-0.jpg",
-            width: 4,
-            height: 3
+            source: image7_0,
+            dimensions: {
+              width: 4,
+              height: 3
+            }
           },
           {
-            src: "../assets/images/restaurants/gallery/tugboat-annies-1.jpg",
-            width: 3,
-            height: 4
+            source: image7_1,
+            dimensions: {
+              width: 3,
+              height: 4
+            }
           },
           {
-            src: "../assets/images/restaurants/gallery/tugboat-annies-2.jpg",
-            width: 5,
-            height: 3
+            source: image7_2,
+            dimensions: {
+              width: 5,
+              height: 3
+            }
           },
           {
-            src: "../assets/images/restaurants/gallery/tugboat-annies-3.jpg",
-            width: 3,
-            height: 4
+            source: image7_3,
+            dimensions: {
+              width: 3,
+              height: 4
+            }
           },
           {
-            src: "../assets/images/restaurants/gallery/tugboat-annies-4.jpg",
-            width: 4,
-            height: 3
+            source: image7_4,
+            dimensions: {
+              width: 4,
+              height: 3
+            }
           },
           {
-            src: "../assets/images/restaurants/gallery/tugboat-annies-5.jpg",
-            width: 4,
-            height: 3
+            source: image7_5,
+            dimensions: {
+              width: 4,
+              height: 3
+            }
           }
         ]
     },

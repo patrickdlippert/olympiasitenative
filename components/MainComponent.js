@@ -4,6 +4,7 @@ import Attractions from './AttractionsComponent';
 import Restaurants from './RestaurantsComponent';
 import Events from './EventsComponent';
 import HighlightInfo from './HighlightInfoComponent';
+import ImageGallery from './ImageGalleryComponent';
 import { View, Platform, StyleSheet } from 'react-native';
 import { Icon } from 'react-native-elements';
 import { createStackNavigator } from 'react-navigation-stack';
@@ -23,7 +24,8 @@ const AttractionNavigator = createStackNavigator(
                 />
             })
         },
-        HighlightInfo: { screen: HighlightInfo }
+        HighlightInfo: { screen: HighlightInfo },
+        ImageGallery: { screen: ImageGallery }
     },
     {
         initialRouteName: 'Attractions',
@@ -52,7 +54,8 @@ const RestaurantNavigator = createStackNavigator(
                 />
             })
         },
-        HighlightInfo: { screen: HighlightInfo }
+        HighlightInfo: { screen: HighlightInfo },
+        ImageGallery: { screen: ImageGallery }
     },
     {
         initialRouteName: 'Restaurants',
@@ -81,7 +84,8 @@ const EventNavigator = createStackNavigator(
                 />
             })
         },
-        HighlightInfo: { screen: HighlightInfo }
+        HighlightInfo: { screen: HighlightInfo },
+        ImageGallery: { screen: ImageGallery }
     },
     {
         initialRouteName: 'Events',
