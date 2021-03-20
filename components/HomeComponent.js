@@ -157,11 +157,12 @@ class Home extends Component {
         } else {
             Alert.alert(
                 "Profile Submitted",
-                "Thanks for entering out contest. Good luck!",
+                "Thanks for entering our contest. Good luck!",
                 [
                   {
                     text: "OK",
-                    onPress: () => this.props.navigation.navigate('Home')
+                    onPress: () => this.props.navigation.navigate('Home'),
+                    style: 'cancel'
                   },
                 ],
                 { cancelable: false }
