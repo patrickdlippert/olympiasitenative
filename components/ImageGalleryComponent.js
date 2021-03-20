@@ -12,10 +12,10 @@ class ImageGallery extends Component {
     
     render() {
         YellowBox.ignoreWarnings(['Animated: `useNativeDriver` was not specified. This is a required option and must be explicitly set to `true` or `false`']);
-        console.log("Inside Image Gallery");
         YellowBox.ignoreWarnings(['Warning: componentWillReceiveProps has been renamed, and is not recommended for use.']);
         YellowBox.ignoreWarnings(['Warning: componentWillMount has been renamed, and is not recommended for use.']);
-        console.log("Inside Image Gallery");
+        YellowBox.ignoreWarnings(['Warning: Failed child context type: Invalid child context']);
+
 
         const highlight = this.props.navigation.getParam('highlight');
 

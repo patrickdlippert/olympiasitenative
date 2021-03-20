@@ -42,6 +42,37 @@ import image2_7 from '../assets/images/events/gallery/olympia-brew-7.jpg';
 import image2_8 from '../assets/images/events/gallery/olympia-brew-8.jpg';
 import image2_9 from '../assets/images/events/gallery/olympia-brew-9.jpg';
 
+
+import image3_0 from '../assets/images/events/gallery/olympia-airshow-0.jpg';
+import image3_1 from '../assets/images/events/gallery/olympia-airshow-1.jpg';
+import image3_2 from '../assets/images/events/gallery/olympia-airshow-2.jpg';
+import image3_3 from '../assets/images/events/gallery/olympia-airshow-3.jpg';
+import image3_4 from '../assets/images/events/gallery/olympia-airshow-4.jpg';
+import image3_5 from '../assets/images/events/gallery/olympia-airshow-5.jpg';
+import image3_6 from '../assets/images/events/gallery/olympia-airshow-6.jpg';
+import image3_7 from '../assets/images/events/gallery/olympia-airshow-7.jpg';
+import image3_8 from '../assets/images/events/gallery/olympia-airshow-8.jpg';
+import image3_9 from '../assets/images/events/gallery/olympia-airshow-9.jpg';
+
+import image4_0 from '../assets/images/events/gallery/nwpirate-festival-0.png';
+import image4_1 from '../assets/images/events/gallery/nwpirate-festival-1.jpg';
+import image4_2 from '../assets/images/events/gallery/nwpirate-festival-2.jpg';
+import image4_3 from '../assets/images/events/gallery/nwpirate-festival-3.jpg';
+import image4_4 from '../assets/images/events/gallery/nwpirate-festival-4.jpg';
+import image4_5 from '../assets/images/events/gallery/nwpirate-festival-5.jpg';
+import image4_6 from '../assets/images/events/gallery/nwpirate-festival-6.jpg';
+import image4_7 from '../assets/images/events/gallery/nwpirate-festival-7.jpg';
+import image4_8 from '../assets/images/events/gallery/nwpirate-festival-8.jpg';
+import image4_9 from '../assets/images/events/gallery/nwpirate-festival-9.jpg';
+
+import image7_0 from '../assets/images/events/gallery/freedom-fest-0.jpg';
+import image7_1 from '../assets/images/events/gallery/freedom-fest-1.jpg';
+import image7_2 from '../assets/images/events/gallery/freedom-fest-2.jpg';
+import image7_3 from '../assets/images/events/gallery/freedom-fest-3.jpg';
+import image7_4 from '../assets/images/events/gallery/freedom-fest-4.jpg';
+import image7_5 from '../assets/images/events/gallery/freedom-fest-5.jpg';
+import image7_6 from '../assets/images/events/gallery/freedom-fest-6.jpg';
+
 export const EVENTS = [
     {
         id: 0,
@@ -308,54 +339,74 @@ export const EVENTS = [
         description: "The Western Washington air show season kicks off on Father’s Day Weekend at the celebrated Olympic Air Show, hosted by the Olympic Flight Museum at the Olympia Regional Airport.The Olympic Air Show is recognized for its wide variety of military aircraft, from nostalgic vintage bi-planes to high-performance jets. As the largest warbird-only gathering in the Pacific Northwest, the show features three hours of outstanding aerobatic performances by visiting aircraft, in addition to the low-level aerobatic demonstration by the museum’s own P-51D Mustang, American Beauty.",
         photos: [
           {
-            src: "../assets/images/events/gallery/olympia-airshow-0.jpg",
-            width: 3,
-            height: 2
+            source: image3_0,
+            dimensions: {
+              width: 3,
+              height: 2
+            }
           },
           {
-            src: "../assets/images/events/gallery/olympia-airshow-1.jpg",
-            width: 16,
-            height: 9
+            source: image3_1,
+            dimensions: {
+              width: 16,
+              height: 9
+            }
           },
           {
-            src: "../assets/images/events/gallery/olympia-airshow-2.jpg",
-            width: 3,
-            height: 2
+            source: image3_2,
+            dimensions: {
+              width: 3,
+              height: 2
+            }
           },
           {
-            src: "../assets/images/events/gallery/olympia-airshow-3.jpg",
-            width: 3,
-            height: 2
+            source: image3_3,
+            dimensions: {
+              width: 3,
+              height: 2
+            }
           },
           {
-            src: "../assets/images/events/gallery/olympia-airshow-4.jpg",
-            width: 5,
-            height: 3
+            source: image3_4,
+            dimensions: {
+              width: 5,
+              height: 3
+            }
           },
           {
-            src: "../assets/images/events/gallery/olympia-airshow-5.jpg",
-            width: 3,
-            height: 1
+            source: image3_5,
+            dimensions: {
+              width: 3,
+              height: 1
+            }
           },
           {
-            src: "../assets/images/events/gallery/olympia-airshow-6.jpg",
-            width: 1,
-            height: 1
+            source: image3_6,
+            dimensions: {
+              width: 1,
+              height: 1
+            }
           },
           {
-            src: "../assets/images/events/gallery/olympia-airshow-7.jpg",
-            width: 1,
-            height: 1
+            source: image3_7,
+            dimensions: {
+              width: 1,
+              height: 1
+            }
           },
           {
-            src: "../assets/images/events/gallery/olympia-airshow-8.jpg",
-            width: 2,
-            height: 1
+            source: image3_8,
+            dimensions: {
+              width: 2,
+              height: 1
+            }
           },
           {
-            src: "../assets/images/events/gallery/olympia-airshow-9.jpg",
-            width: 3,
-            height: 4
+            source: image3_9,
+            dimensions: {
+              width: 3,
+              height: 4
+            }
           }
         ]
     },
@@ -372,54 +423,74 @@ export const EVENTS = [
         description: "Hoist the mainsails, don your best pirate attire & eye-patch, and, practice your Arrhhh! to add a dash of shiver to yer timbers! Join our 2 infamous Pirate crews on July 10th - 11th, 2021 as they seek to win your favor & support with music & shanties, entertaining battles, cannons, shenanigans and more! Food is aplenty at The Galley, you can drink rum & grog at The Crow’s Nest Inn and buy all sorts of baubles & trinkets at The Market for every sea-fairer in every price range. Young and old – ALL are invited to join in on the festivities of Black Sand Bay & the NW Pirate Festival so come dressed in your BEST pirate attire!",
         photos: [
           {
-            src: "../assets/images/events/gallery/nwpirate-festival-0.png",
-            width: 1,
-            height: 1
+            source: image4_0,
+            dimensions: {
+              width: 1,
+              height: 1
+            }
           },
           {
-            src: "../assets/images/events/gallery/nwpirate-festival-1.jpg",
-            width: 15,
-            height: 9
+            source: image4_1,
+            dimensions: {
+              width: 15,
+              height: 9
+            }
           },
           {
-            src: "../assets/images/events/gallery/nwpirate-festival-2.jpg",
-            width: 2,
-            height: 1
+            source: image4_2,
+            dimensions: {
+              width: 2,
+              height: 1
+            }
           },
           {
-            src: "../assets/images/events/gallery/nwpirate-festival-3.jpg",
-            width: 3,
-            height: 2
+            source: image4_3,
+            dimensions: {
+              width: 3,
+              height: 2
+            }
           },
           {
-            src: "../assets/images/events/gallery/nwpirate-festival-4.jpg",
-            width: 16,
-            height: 9
+            source: image4_4,
+            dimensions: {
+              width: 16,
+              height: 9
+            }
           },
           {
-            src: "../assets/images/events/gallery/nwpirate-festival-5.jpg",
-            width: 3,
-            height: 2
+            source: image4_5,
+            dimensions: {
+              width: 3,
+              height: 2
+            }
           },
           {
-            src: "../assets/images/events/gallery/nwpirate-festival-6.jpg",
-            width: 9,
-            height: 8
+            source: image4_6,
+            dimensions: {
+              width: 9,
+              height: 8
+            }
           },
           {
-            src: "../assets/images/events/gallery/nwpirate-festival-7.jpg",
-            width: 3,
-            height: 2
+            source: image4_7,
+            dimensions: {
+              width: 3,
+              height: 2
+            }
           },
           {
-            src: "../assets/images/events/gallery/nwpirate-festival-8.jpg",
-            width: 11,
-            height: 7
+            source: image4_8,
+            dimensions: {
+              width: 11,
+              height: 7
+            }
           },
           {
-            src: "../assets/images/events/gallery/nwpirate-festival-9.jpg",
-            width: 3,
-            height: 2
+            source: image4_9,
+            dimensions: {
+              width: 3,
+              height: 2
+            }
           }
         ]
     },
@@ -460,39 +531,53 @@ export const EVENTS = [
         description: "Freedom Fest offers a day of fun, food, and entertainment for the whole family. All-day attractions include a midway with carnival rides, fair food and other concessions, Kids World activities, jugglers, stilt-walkers and other roving performers and live music. Freedom Fest will take place at Cowan Stadium, north of Olympia from 11 a.m. to 11 p.m. and will culminate with a grand finale fireworks show. Admission and parking are free, and visitors should bring photo ID.",
         photos: [
           {
-            src: "../assets/images/events/gallery/freedom-fest-0.jpg",
-            width: 8,
-            height: 7
+            source: image7_0,
+            dimensions: {
+              width: 8,
+              height: 7
+            }
           },
           {
-            src: "../assets/images/events/gallery/freedom-fest-1.jpg",
-            width: 16,
-            height: 9
+            source: image7_1,
+            dimensions: {
+              width: 16,
+              height: 9
+            }
           },
           {
-            src: "../assets/images/events/gallery/freedom-fest-2.jpg",
-            width: 7,
-            height: 5
+            source: image7_2,
+            dimensions: {
+              width: 7,
+              height: 5
+            }
           },
           {
-            src: "../assets/images/events/gallery/freedom-fest-3.jpg",
-            width: 3,
-            height: 2
+            source: image7_3,
+            dimensions: {
+              width: 3,
+              height: 2
+            }
           },
           {
-            src: "../assets/images/events/gallery/freedom-fest-4.jpg",
-            width: 11,
-            height: 7
+            source: image7_4,
+            dimensions: {
+              width: 11,
+              height: 7
+            }
           },
           {
-            src: "../assets/images/events/gallery/freedom-fest-5.jpg",
-            width: 3,
-            height: 2
+            source: image7_5,
+            dimensions: {
+              width: 3,
+              height: 2
+            }
           },
           {
-            src: "../assets/images/events/gallery/freedom-fest-6.jpg",
-            width: 3,
-            height: 2
+            source: image7_6,
+            dimensions: {
+              width: 3,
+              height: 2
+            }
           }
         ]
     },

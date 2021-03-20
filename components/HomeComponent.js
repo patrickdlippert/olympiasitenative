@@ -1,41 +1,49 @@
 import React, { Component } from 'react';
-import { View, Text, ScrollView, Image, ImageBackground, StyleSheet } from 'react-native';
+import { View, Text, ScrollView, Image, ImageBackground, StyleSheet, Modal, Button, Alert } from 'react-native';
 import { Card } from 'react-native-elements';
 import { PROMOTIONS } from '../shared/promotions';
 import { SPONSORS } from '../shared/sponsors';
 import CardCarousel from './CardCarouselComponent';
 import { LinearGradient } from 'expo-linear-gradient';
 import * as Animatable from 'react-native-animatable';
+import { TextInput } from 'react-native-paper';
 
 
 
-function RenderSplash() {
+function RenderSplash(props) {
     return (
         <Animatable.View 
         animation='fadeInDown'
         duration={2000}
-        delay={1000}
+        delay={500}
         >
-        <Card>
-            <ImageBackground 
-            style={{flex:1, height: '100%', width:'100%', alignSelf: 'center'}}
-            resizeMode="cover"
-            source={require('../assets/images/olympia-aerial2.jpg')}>
-                <Animatable.Image 
-                    animation='tada'
-                    duration={4000}
-                    delay={1000}
-                    style={{flex:1, height: 250,  alignSelf: 'center'}}
-                    resizeMode="contain"
-                    source={require('../assets/images/LaurelTopTen.png')} />
-                <Animatable.Text 
-                    animation='fadeInRight'
-                    duration={4000}
-                    delay={1000}
-                    style={styles.introText}
-                    >The absolute best of Olympia!</Animatable.Text>
-            </ImageBackground>
-        </Card>
+            <Card>
+                <ImageBackground 
+                style={{flex:1, height: '100%', width:'100%', alignSelf: 'center'}}
+                resizeMode="cover"
+                source={require('../assets/images/olympia-aerial2.jpg')}>
+                    <Animatable.Image 
+                        animation='tada'
+                        duration={4000}
+                        delay={1000}
+                        style={{flex:1, height: 250,  alignSelf: 'center'}}
+                        resizeMode="contain"
+                        source={require('../assets/images/LaurelTopTen.png')} />
+                    <Animatable.Text 
+                        animation='fadeInRight'
+                        duration={4000}
+                        delay={1000}
+                        style={styles.introText}
+                        >The absolute best of Olympia!</Animatable.Text>
+                </ImageBackground>
+                <View style={{marginTop: 5}}>
+                    <Button  
+                        title="Enter Sweepstakes"  
+                        onPress={() => props.onShowModal()}
+                        color="#60106B"
+                    />
+                </View>
+            </Card>
         </Animatable.View>
     );
 }
@@ -62,14 +70,108 @@ class Home extends Component {
         super(props);
         this.state = {
             promotions: PROMOTIONS,
-            sponsors: SPONSORS
+            sponsors: SPONSORS,
+            firstName: '',
+            lastName: '',
+            email: '',
+            showModal: false
         };
+        this.toggleModal = this.toggleModal.bind(this);
+        this.handleSweepstakes = this.handleSweepstakes.bind(this);
     }
 
     static navigationOptions = {
         title: 'Home'
     }
 
+    toggleModal() {
+        this.setState({showModal: !this.state.showModal});
+    }
+
+    resetForm() {
+        this.setState({
+            firstName: '',
+            lastName: '',
+            email: '' 
+        });
+    }
+
+    handleSweepstakes(event) {
+        if (!this.state.firstName) {
+            Alert.alert(
+                'First Name Required',
+                'Please enter your first name',
+                [
+                    {
+                        text: 'Cancel',
+                        onPress: () => console.log('Cancelled sweepstakes alert'),
+                        style: 'cancel'
+                    },
+                    {
+                        text: 'OK',
+                        onPress: () => console.log('OK selected. Trying again.'),
+                    }
+                ],
+                { cancelable: false }
+            );
+            return;
+
+        } else if (!this.state.lastName) {
+            Alert.alert(
+                'Last Name Required',
+                'Please enter your last name',
+                [
+                    {
+                        text: 'Cancel',
+                        onPress: () => console.log('Cancelled sweepstakes alert'),
+                        style: 'cancel'
+                    },
+                    {
+                        text: 'OK',
+                        onPress: () => console.log('OK selected. Trying again.'),
+                    }
+                ],
+                { cancelable: false }
+            );
+            return;
+            
+        } else if (!this.state.email) {
+            Alert.alert(
+                'Email Required',
+                'Please enter an email address',
+                [
+                    {
+                        text: 'Cancel',
+                        onPress: () => console.log('Cancelled sweepstakes alert'),
+                        style: 'cancel'
+                    },
+                    {
+                        text: 'OK',
+                        onPress: () => console.log('OK selected. Trying again.'),
+                    }
+                ],
+                { cancelable: false }
+            );
+            return;
+
+        } else {
+            Alert.alert(
+                "Profile Submitted",
+                "Thanks for entering out contest. Good luck!",
+                [
+                  {
+                    text: "OK",
+                    onPress: () => this.props.navigation.navigate('Home')
+                  },
+                ],
+                { cancelable: false }
+            );
+            this.resetForm();
+        }
+        
+        this.toggleModal();
+
+    }
 
 
     render() {
@@ -87,12 +189,86 @@ class Home extends Component {
                             source={require('../assets/images/OlympiaTopTen.png')} />
                     </LinearGradient>
                 </View>
-                <RenderSplash />
-                <RenderItem 
-                    item={this.state.promotions.filter(promotion => promotion.featured)[0]} />
+                <RenderSplash 
+                    onShowModal={() => this.toggleModal()}
+                />
+
+                <Modal
+                    animationType = {"slide"}
+                    transparent={false}
+                    visible={this.state.showModal}
+                    onRequestClose={() => this.toggleModal()}
+                >
+                    <ScrollView>
+                        <View style={{ height:600}}>
+                            <RenderItem 
+                                item={this.state.promotions.filter(promotion => promotion.featured)[0]} />
+
+                            <View style={styles.formRow}>
+                                <TextInput
+                                    required
+                                    style={{flex: 1, height: 35}}
+                                    mode="outlined"
+                                    label="First Name"
+                                    autoCompleteType="name"
+                                    keyboardType="default"
+                                    textContentType="givenName"
+                                    placeholder="First Name"
+                                    onChangeText={value => this.setState({ firstName: value })}
+                                    value = {this.state.firstName}
+                                />
+                            </View>
+                            <View style={styles.formRow}>
+                                <TextInput
+                                    style={{flex: 1, height: 35}}
+                                    mode="outlined"
+                                    label="Last Name"
+                                    autoCompleteType="name"
+                                    keyboardType="default"
+                                    textContentType="familyName"
+                                    placeholder="Last Name"
+                                    onChangeText={value => this.setState({ lastName: value })}
+                                    value = {this.state.lastName}
+                                />
+                            </View>
+                            <View style={styles.formRow}>
+                                <TextInput
+                                    style={{flex: 1, height: 35}}
+                                    mode="outlined"
+                                    label="email"
+                                    autoCompleteType="email"
+                                    keyboardType="email-address"
+                                    textContentType="emailAddress"
+                                    placeholder="Email"
+                                    onChangeText={value => this.setState({ email: value })}
+                                    value = {this.state.email}
+                                />
+                            </View>
+                            <View style={styles.buttonSection}>
+                                <Button
+                                    onPress={() => {
+                                        this.handleSweepstakes();
+                                    }}
+                                    color='#5637DD'
+                                    title='Submit'
+                                />
+                            </View>
+                            <View style={styles.buttonSection}>
+                                    <Button
+                                    onPress={() => {
+                                        this.toggleModal();
+                                    }}
+                                    color='#808080'
+                                    title='Close'
+                                />
+                            </View>
+                        </View>
+                    </ScrollView>
+                </Modal>
 
 
                 <CardCarousel resources={this.state.sponsors} />
+
             </ScrollView>
         )
     }
@@ -116,7 +292,17 @@ const styles = StyleSheet.create(
             fontSize: 18,
             color: '#fff',
             textAlign: 'center'
-        }
+        },
+        formRow: {
+            flex: 1,
+            flexDirection: 'row',
+            margin: 10
+        },
+        buttonSection: {
+            width: '80%',
+            alignSelf: 'center',
+            marginBottom: 10
+         }
     }
 );
 
