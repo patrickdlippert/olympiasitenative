@@ -9,6 +9,39 @@ import image7 from '../assets/images/events/freedom-fest-thumbnail.jpg';
 import image8 from '../assets/images/events/arts-walk-thumbnail.jpg';
 import image9 from '../assets/images/events/tumwater-brewfest-thumbnail.jpg';
 
+import image0_0 from '../assets/images/events/gallery/harbor-days-0.png';
+import image0_1 from '../assets/images/events/gallery/harbor-days-1.jpg';
+import image0_2 from '../assets/images/events/gallery/harbor-days-2.jpg';
+import image0_3 from '../assets/images/events/gallery/harbor-days-3.jpg';
+import image0_4 from '../assets/images/events/gallery/harbor-days-4.jpg';
+import image0_5 from '../assets/images/events/gallery/harbor-days-5.jpg';
+import image0_6 from '../assets/images/events/gallery/harbor-days-6.jpg';
+import image0_7 from '../assets/images/events/gallery/harbor-days-7.jpg';
+import image0_8 from '../assets/images/events/gallery/harbor-days-8.jpg';
+import image0_9 from '../assets/images/events/gallery/harbor-days-9.jpg';
+
+import image1_0 from '../assets/images/events/gallery/thurstonco-fair-0.jpg';
+import image1_1 from '../assets/images/events/gallery/thurstonco-fair-1.jpg';
+import image1_2 from '../assets/images/events/gallery/thurstonco-fair-2.jpg';
+import image1_3 from '../assets/images/events/gallery/thurstonco-fair-3.jpg';
+import image1_4 from '../assets/images/events/gallery/thurstonco-fair-4.jpg';
+import image1_5 from '../assets/images/events/gallery/thurstonco-fair-5.jpg';
+import image1_6 from '../assets/images/events/gallery/thurstonco-fair-6.jpg';
+import image1_7 from '../assets/images/events/gallery/thurstonco-fair-7.jpg';
+import image1_8 from '../assets/images/events/gallery/thurstonco-fair-8.jpg';
+import image1_9 from '../assets/images/events/gallery/thurstonco-fair-9.jpg';
+
+import image2_0 from '../assets/images/events/gallery/olympia-brew-0.jpg';
+import image2_1 from '../assets/images/events/gallery/olympia-brew-1.jpg';
+import image2_2 from '../assets/images/events/gallery/olympia-brew-2.jpg';
+import image2_3 from '../assets/images/events/gallery/olympia-brew-3.jpg';
+import image2_4 from '../assets/images/events/gallery/olympia-brew-4.jpg';
+import image2_5 from '../assets/images/events/gallery/olympia-brew-5.jpg';
+import image2_6 from '../assets/images/events/gallery/olympia-brew-6.jpg';
+import image2_7 from '../assets/images/events/gallery/olympia-brew-7.jpg';
+import image2_8 from '../assets/images/events/gallery/olympia-brew-8.jpg';
+import image2_9 from '../assets/images/events/gallery/olympia-brew-9.jpg';
+
 export const EVENTS = [
     {
         id: 0,
@@ -23,54 +56,74 @@ export const EVENTS = [
         description: 'Olympia Harbor Days is an annual non-profit festival that celebrates the return of vintage tugboats of the Puget Sound to Olympia for three days of entertainment, food, art, history and a last farewell to summer. Vintage tugboats, retired or working, are moored at Olympia’s Percival Landing where you can Tour the Tugs on Saturday. Be on hand Sunday as the tugs leave shore at noon to participate in the annual World’s Largest Vintage Tugboat Races & Show! The tugs race the deep channel of Budd Bay near Butler Cove.',
         photos: [
           {
-            src: "../assets/images/events/gallery/harbor-days-0.png",
-            width: 1,
-            height: 1
+            source: image0_0,
+            dimensions: {
+              width: 1,
+              height: 1
+            }
           },
           {
-            src: "../assets/images/events/gallery/harbor-days-1.jpg",
-            width: 3,
-            height: 2
+            source: image0_1,
+            dimensions: {
+              width: 3,
+              height: 2
+            }
           },
           {
-            src: "../assets/images/events/gallery/harbor-days-2.jpg",
-            width: 3,
-            height: 2
+            source: image0_2,
+            dimensions: {
+              width: 3,
+              height: 2
+            }
           },
           {
-            src: "../assets/images/events/gallery/harbor-days-3.jpg",
-            width: 3,
-            height: 2
+            source: image0_3,
+            dimensions: {
+              width: 3,
+              height: 2
+            }
           },
           {
-            src: "../assets/images/events/gallery/harbor-days-4.jpg",
-            width: 2,
-            height: 3
+            source: image0_4,
+            dimensions: {
+              width: 2,
+              height: 3
+            }
           },
           {
-            src: "../assets/images/events/gallery/harbor-days-5.jpg",
-            width: 16,
-            height: 9
+            source: image0_5,
+            dimensions: {
+              width: 16,
+              height: 9
+            }
           },
           {
-            src: "../assets/images/events/gallery/harbor-days-6.jpg",
-            width: 4,
-            height: 3
+            source: image0_6,
+            dimensions: {
+              width: 4,
+              height: 3
+            }
           },
           {
-            src: "../assets/images/events/gallery/harbor-days-7.jpg",
-            width: 3,
-            height: 2
+            source: image0_7,
+            dimensions: {
+              width: 3,
+              height: 2
+            }
           },
           {
-            src: "../assets/images/events/gallery/harbor-days-8.jpg",
-            width: 4,
-            height: 3
+            source: image0_8,
+            dimensions: {
+              width: 4,
+              height: 3
+            }
           },
           {
-            src: "../assets/images/events/gallery/harbor-days-9.jpg",
-            width: 16,
-            height: 9
+            source: image0_9,
+            dimensions: {
+              width: 16,
+              height: 9
+            }
           }
         ]
     },
@@ -87,54 +140,74 @@ export const EVENTS = [
         description: "The Thurston County Fair was first held in 1871 with the intention of helping farmers and agriculture and, over a hundred years later, is still going strong. The annual event features multiple days of family-friendly fun and entertainment including live music, a carnival, a 4-H Fashion Revue, a Kids Pedal Tractor Pull, Irish Dancers and Cloggers, taiko drum performances, wildlife education and more. There’s also a delicious assortment of fare foods and locally crafted beer, cider and wine.",
         photos: [
           {
-            src: "../assets/images/events/gallery/thurstonco-fair-0.jpg",
-            width: 4,
-            height: 5
+            source: image1_0,
+            dimensions: {
+              width: 4,
+              height: 5
+            }
           },
           {
-            src: "../assets/images/events/gallery/thurstonco-fair-1.jpg",
-            width: 4,
-            height: 3
+            source: image1_1,
+            dimensions: {
+              width: 4,
+              height: 3
+            }
           },
           {
-            src: "../assets/images/events/gallery/thurstonco-fair-2.jpg",
-            width: 3,
-            height: 2
+            source: image1_2,
+            dimensions: {
+              width: 3,
+              height: 2
+            }
           },
           {
-            src: "../assets/images/events/gallery/thurstonco-fair-3.jpg",
-            width: 11,
-            height: 8
+            source: image1_3,
+            dimensions: {
+              width: 11,
+              height: 8
+            }
           },
           {
-            src: "../assets/images/events/gallery/thurstonco-fair-4.jpg",
-            width: 3,
-            height: 2
+            source: image1_4,
+            dimensions: {
+              width: 3,
+              height: 2
+            }
           },
           {
-            src: "../assets/images/events/gallery/thurstonco-fair-5.jpg",
-            width: 5,
-            height: 9
+            source: image1_5,
+            dimensions: {
+              width: 5,
+              height: 9
+            }
           },
           {
-            src: "../assets/images/events/gallery/thurstonco-fair-6.jpg",
-            width: 7,
-            height: 5
+            source: image1_6,
+            dimensions: {
+              width: 7,
+              height: 5
+            }
           },
           {
-            src: "../assets/images/events/gallery/thurstonco-fair-7.jpg",
-            width: 5,
-            height: 4
+            source: image1_7,
+            dimensions: {
+              width: 5,
+              height: 4
+            }
           },
           {
-            src: "../assets/images/events/gallery/thurstonco-fair-8.jpg",
-            width: 2,
-            height: 3
+            source: image1_8,
+            dimensions: {
+              width: 2,
+              height: 3
+            }
           },
           {
-            src: "../assets/images/events/gallery/thurstonco-fair-9.jpg",
-            width: 4,
-            height: 3
+            source: image1_9,
+            dimensions: {
+              width: 4,
+              height: 3
+            }
           }
         ]
     },
@@ -151,54 +224,74 @@ export const EVENTS = [
         description: "The Olympia Brew Fest is an annual summer beer festival that takes place at the Port Plaza in Olympia, WA. It features 30+ hand-picked, northwest breweries and over 60 different beers. Sample local food and enjoy live music at the stage right by the harbor. Proceeds from the festival benefit the Thurston County Chamber Foundation Small Business Development (Incubator) Program. Come and celebrate Olympia's fine brewing heritage!",
         photos: [
           {
-            src: "../assets/images/events/gallery/olympia-brew-0.jpg",
-            width: 19,
-            height: 10
+            source: image2_0,
+            dimensions: {
+              width: 19,
+              height: 10
+            }
           },
           {
-            src: "../assets/images/events/gallery/olympia-brew-1.jpg",
-            width: 3,
-            height: 2
+            source: image2_1,
+            dimensions: {
+              width: 3,
+              height: 2
+            }
           },
           {
-            src: "../assets/images/events/gallery/olympia-brew-2.jpg",
-            width: 1,
-            height: 1
+            source: image2_2,
+            dimensions: {
+              width: 1,
+              height: 1
+            }
           },
           {
-            src: "../assets/images/events/gallery/olympia-brew-3.jpg",
-            width: 3,
-            height: 2
+            source: image2_3,
+            dimensions: {
+              width: 3,
+              height: 2
+            }
           },
           {
-            src: "../assets/images/events/gallery/olympia-brew-4.jpg",
-            width: 3,
-            height: 2
+            source: image2_4,
+            dimensions: {
+              width: 3,
+              height: 2
+            }
           },
           {
-            src: "../assets/images/events/gallery/olympia-brew-5.jpg",
-            width: 3,
-            height: 2
+            source: image2_5,
+            dimensions: {
+              width: 3,
+              height: 2
+            }
           },
           {
-            src: "../assets/images/events/gallery/olympia-brew-6.jpg",
-            width: 1,
-            height: 1
+            source: image2_6,
+            dimensions: {
+              width: 1,
+              height: 1
+            }
           },
           {
-            src: "../assets/images/events/gallery/olympia-brew-7.jpg",
-            width: 3,
-            height: 2
+            source: image2_7,
+            dimensions: {
+              width: 3,
+              height: 2
+            }
           },
           {
-            src: "../assets/images/events/gallery/olympia-brew-8.jpg",
-            width: 4,
-            height: 3
+            source: image2_8,
+            dimensions: {
+              width: 4,
+              height: 3
+            }
           },
           {
-            src: "../assets/images/events/gallery/olympia-brew-9.jpg",
-            width: 8,
-            height: 5
+            source: image2_9,
+            dimensions: {
+              width: 8,
+              height: 5
+            }
           }
         ]
     },
