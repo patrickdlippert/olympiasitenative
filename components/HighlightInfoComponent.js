@@ -45,6 +45,7 @@ function CreateUrlLink({highlight}) {
 
 function CreateAddressLink({highlight}) {
     if(highlight.address) {
+        let link = `http://maps.google.com/maps?q=${encodeURIComponent(highlight.address)}`;
         return (
             <View style={{
                 paddingVertical: 5,
@@ -58,7 +59,7 @@ function CreateAddressLink({highlight}) {
                 size={16}
                 color='blue'
             />
-            <Text style={{marginLeft: 10}} onPress={ ()=>{ Linking.openURL(`${highlight.url}`)}}>{highlight.address}</Text>
+            <Text style={{marginLeft: 10}} onPress={ ()=>{ Linking.openURL(`${link}`)}}>{highlight.address}</Text>
             </View>
         )
     }
