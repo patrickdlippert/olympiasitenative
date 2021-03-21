@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View, Button, Linking } from 'react-native';
+import { Text, View, Button, Linking, ScrollView } from 'react-native';
 import { Card, Rating, Icon } from 'react-native-elements';
 import { ATTRACTIONS } from '../shared/attractions';
 
@@ -13,7 +13,7 @@ function CreateImageLink({highlight, navigate}) {
                 <Button 
                     title="More pics"
                     onPress={() => navigate('ImageGallery', { highlight: highlight }  )}
-                    color="blue"
+                    color='#5637DD'
                 />
                 </View>
         );
@@ -69,25 +69,25 @@ function RenderHighlight({highlight, navigate}) {
     if (highlight) {
         
         return (
-            <Card 
-                featuredTitle={highlight.name}
-                image={highlight.image}
-                imageStyle={{
-                    width: "100%",
-                    height: 200,
-                   resizeMode: 'cover'
-                  }}
-            >
-                <CreateImageLink highlight={highlight} navigate={navigate} />
-                <Rating imageSize={20} readonly startingValue={highlight.rating}  />
-                <Text style={{margin: 10}}>
-                    {highlight.description}
-                </Text>
-                <CreateAddressLink highlight={highlight} />
-                <CreateUrlLink highlight={highlight} />
-
-
-            </Card>
+            <ScrollView>
+                <Card 
+                    featuredTitle={highlight.name}
+                    image={highlight.image}
+                    imageStyle={{
+                        width: "100%",
+                        height: 200,
+                    resizeMode: 'cover'
+                    }}
+                >
+                    <CreateImageLink highlight={highlight} navigate={navigate} />
+                    <Rating imageSize={20} readonly startingValue={highlight.rating}  />
+                    <Text style={{margin: 10}}>
+                        {highlight.description}
+                    </Text>
+                    <CreateAddressLink highlight={highlight} />
+                    <CreateUrlLink highlight={highlight} />
+                </Card>
+            </ScrollView>
         );
     }
     return <View />;

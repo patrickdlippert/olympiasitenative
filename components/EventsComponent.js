@@ -37,7 +37,7 @@ class Events extends Component {
                     title={item.name}
                     featured caption={item.type}
                     onPress={() => navigate('HighlightInfo', { highlight: item }  )}
-                    icon={{ name: 'play-circle', type: 'font-awesome' }}
+                    icon={{ name: 'play-circle', type: 'font-awesome', size: 40, color: '#5637DD' }}
                 />
             );
         };
