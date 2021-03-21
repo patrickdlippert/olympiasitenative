@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import MasonryList from "react-native-masonry-list";
-import { Text, View, Image, Modal, ScrollView, Button, StyleSheet, YellowBox } from 'react-native';
+import { View, Image, Modal, ScrollView, StyleSheet, YellowBox } from 'react-native';
+import { Button } from 'react-native-elements';
 
 
 
@@ -73,10 +74,10 @@ class ImageGallery extends Component {
 
                             <View style={styles.buttonSection}>
                                 <Button
+                                    buttonStyle={styles.button}
                                     onPress={() => {
                                         this.toggleModal();
                                     }}
-                                    color='#5637DD'
                                     title='Close'
                                 />
                             </View>
@@ -101,6 +102,12 @@ const styles = StyleSheet.create(
             width: '80%',
             alignSelf: 'center',
             marginBottom: 10
+         },
+         button: {
+            backgroundColor: '#5637DD',
+            borderColor: '#60106B',
+            borderWidth: 2,
+            borderRadius: 5,       
          }
     }
 );

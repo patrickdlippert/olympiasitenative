@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Text, View, Button, Linking, ScrollView } from 'react-native';
-import { Card, Rating, Icon } from 'react-native-elements';
+import { Text, View, Linking, ScrollView, StyleSheet } from 'react-native';
+import { Card, Rating, Icon, Button } from 'react-native-elements';
 import { ATTRACTIONS } from '../shared/attractions';
 
 
@@ -11,9 +11,9 @@ function CreateImageLink({highlight, navigate}) {
         return (
                 <View style={{marginBottom: 10}}>
                 <Button 
-                    title="More pics"
+                    buttonStyle={styles.button}
+                    title="View More Pics"
                     onPress={() => navigate('ImageGallery', { highlight: highlight }  )}
-                    color='#5637DD'
                 />
                 </View>
         );
@@ -117,5 +117,18 @@ class HighlightInfo extends Component {
         return <RenderHighlight highlight={highlight} navigate={this.props.navigation.navigate}/>;
     }
 }
+
+const styles = StyleSheet.create(
+    {
+         button: {
+            backgroundColor: '#5637DD',
+            borderColor: '#60106B',
+            borderWidth: 2,
+            borderRadius: 5,
+            padding: 5       
+         }
+
+    }
+);
 
 export default HighlightInfo;

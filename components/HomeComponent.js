@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { View, Text, ScrollView, Image, ImageBackground, StyleSheet, Modal, Button, Alert } from 'react-native';
-import { Card } from 'react-native-elements';
+import { View, Text, ScrollView, Image, ImageBackground, StyleSheet, Modal, Alert } from 'react-native';
+import { Card, Button } from 'react-native-elements';
 import { PROMOTIONS } from '../shared/promotions';
 import { SPONSORS } from '../shared/sponsors';
 import CardCarousel from './CardCarouselComponent';
@@ -38,6 +38,7 @@ function RenderSplash(props) {
                 </ImageBackground>
                 <View style={{marginTop: 5}}>
                     <Button  
+                        buttonStyle={styles.button}
                         title="Enter Sweepstakes"  
                         onPress={() => props.onShowModal()}
                         color="#60106B"
@@ -156,7 +157,7 @@ class Home extends Component {
 
         } else {
             Alert.alert(
-                "Profile Submitted",
+                "Entry Submitted",
                 "Thanks for entering our contest. Good luck!",
                 [
                   {
@@ -236,7 +237,7 @@ class Home extends Component {
                                 <TextInput
                                     style={{flex: 1, height: 35}}
                                     mode="outlined"
-                                    label="email"
+                                    label="Email"
                                     autoCompleteType="email"
                                     keyboardType="email-address"
                                     textContentType="emailAddress"
@@ -247,19 +248,19 @@ class Home extends Component {
                             </View>
                             <View style={styles.buttonSection}>
                                 <Button
+                                    buttonStyle={styles.button}
                                     onPress={() => {
                                         this.handleSweepstakes();
                                     }}
-                                    color='#5637DD'
                                     title='Submit'
                                 />
                             </View>
                             <View style={styles.buttonSection}>
-                                    <Button
+                                <Button
+                                    buttonStyle={styles.button}
                                     onPress={() => {
                                         this.toggleModal();
                                     }}
-                                    color='#808080'
                                     title='Close'
                                 />
                             </View>
@@ -302,11 +303,16 @@ const styles = StyleSheet.create(
         buttonSection: {
             width: '80%',
             alignSelf: 'center',
-            marginBottom: 10
+            marginTop: 10
+         },
+         button: {
+            backgroundColor: '#5637DD',
+            borderColor: '#60106B',
+            borderWidth: 2,
+            borderRadius: 5,       
          }
+
     }
 );
-
-
 
 export default Home;

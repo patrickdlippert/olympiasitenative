@@ -45,7 +45,7 @@ function RenderCards({resources}) {
         return (
             <View key={resource.id} style={styles.slide}>
                 <LinearGradient
-                    colors={['#5637DD', '#3046C5', '#60106B']}
+                    colors={['#60106B', '#3046C5', '#5637DD']}
                     style={styles.linearGradient}
                 >
                 <ConstructCard resource={resource} />
