@@ -29,12 +29,8 @@ class ImageGallery extends Component {
 
 
     handleFullImage(item) {
-        console.log('Image clicked');
-        console.log(item);
         this.setState({currImage: item.source });
-        console.log(this.state.currImage);
         this.toggleModal();
-
     }
     
     render() {
@@ -44,12 +40,10 @@ class ImageGallery extends Component {
 
         const highlight = this.props.navigation.getParam('highlight');
 
-        console.log(highlight.photos);
         if(highlight.photos) {
             return(
                 <ScrollView>
                     <MasonryList
-                        
                         images={highlight.photos}
                         onPressImage={(item) => this.handleFullImage(item)}
                     />

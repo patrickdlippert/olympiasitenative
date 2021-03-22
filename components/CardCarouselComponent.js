@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Linking, TouchableOpacity } from 'react-native';
 import { Card } from 'react-native-elements';
 import Slick from 'react-native-slick';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -25,14 +25,16 @@ function ConstructCard({resource}) {
     if( {resource} ) {
         return(
             <View style={{marginBottom:15}}>
-            <Card
-                featuredTitle={resource.displayName ? resource.name : ''}
-                image={resource.image}>
-                <Text
-                style={styles.text}>
-                    {resource.description}
-                </Text>
-            </Card>
+                <TouchableOpacity key={resource.id} onPress={ ()=>{ Linking.openURL(`${resource.url}`)}}>
+                    <Card
+                        featuredTitle={resource.displayName ? resource.name : ''}
+                        image={resource.image}>
+                        <Text
+                        style={styles.text}>
+                            {resource.description}
+                        </Text>
+                    </Card>
+                </TouchableOpacity>
             </View>
         );
     }
