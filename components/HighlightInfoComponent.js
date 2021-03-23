@@ -82,6 +82,7 @@ function RenderHighlight({highlight, navigate}) {
                 >
                     <CreateImageLink highlight={highlight} navigate={navigate} />
                     <Rating imageSize={20} readonly startingValue={highlight.rating}  />
+                    <Text style={{margin: 10, textAlign: 'center'}}>{highlight.price} - {highlight.type}</Text>
                     <Text style={{margin: 10}}>
                         {highlight.description}
                     </Text>
