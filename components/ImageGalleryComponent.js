@@ -51,7 +51,7 @@ class ImageGallery extends Component {
                     <Modal 
                         animationType = {"slide"}
                         visible={this.state.showModal} 
-                        transparent={false}
+                        transparent={true}
                         presentationStyle='overFullScreen'
                         onRequestClose={() => this.toggleModal()}
                     >
@@ -90,7 +90,7 @@ const styles = StyleSheet.create(
         container:
         {
             flex: 1,
-            backgroundColor: '#808080' // Set your own custom Color 
+            backgroundColor: 'rgba(0, 0, 0, 0.85)'
         },
         buttonSection: {
             width: '80%',
