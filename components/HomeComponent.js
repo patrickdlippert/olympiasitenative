@@ -7,8 +7,7 @@ import CardCarousel from './CardCarouselComponent';
 import { LinearGradient } from 'expo-linear-gradient';
 import * as Animatable from 'react-native-animatable';
 import { TextInput } from 'react-native-paper';
-import KeyboardShift from './KeyboardShift';
-
+import { KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 
 function RenderSplash(props) {
     return (
@@ -38,7 +37,7 @@ function RenderSplash(props) {
                 </ImageBackground>
                 <View style={{marginTop: 5}}>
                     <Button  
-                        buttonStyle={styles.button}
+                        buttonStyle={styles.buttonSubmit}
                         title="Enter Sweepstakes"  
                         onPress={() => props.onShowModal()}
                         color="#60106B"
@@ -201,10 +200,7 @@ class Home extends Component {
                     visible={this.state.showModal}
                     onRequestClose={() => this.toggleModal()}
                 >
-                   
-                        <KeyboardShift>
-                        {() => (
-                        <ScrollView>
+                    <KeyboardAwareScrollView>
                         <View style={{ height:600}}>
                             <RenderItem 
                                 item={this.state.promotions.filter(promotion => promotion.featured)[0]} />
@@ -251,7 +247,7 @@ class Home extends Component {
                             </View>
                             <View style={styles.buttonSection}>
                                 <Button
-                                    buttonStyle={styles.button}
+                                    buttonStyle={styles.buttonSubmit}
                                     onPress={() => {
                                         this.handleSweepstakes();
                                     }}
@@ -260,7 +256,7 @@ class Home extends Component {
                             </View>
                             <View style={styles.buttonSection}>
                                 <Button
-                                    buttonStyle={styles.button}
+                                    buttonStyle={styles.buttonCancel}
                                     onPress={() => {
                                         this.toggleModal();
                                     }}
@@ -268,10 +264,7 @@ class Home extends Component {
                                 />
                             </View>
                         </View>
-                        </ScrollView>
-                        )}
-                        </KeyboardShift>
-
+                    </KeyboardAwareScrollView>
                 </Modal>
 
 
@@ -311,12 +304,18 @@ const styles = StyleSheet.create(
             alignSelf: 'center',
             marginTop: 10
          },
-         button: {
+         buttonSubmit: {
             backgroundColor: '#5637DD',
             borderColor: '#60106B',
-            borderWidth: 2,
+            borderWidth: 1,
+            borderRadius: 5,        
+        },
+        buttonCancel: {
+            backgroundColor: '#808080',
+            borderColor: '#60106B',
+            borderWidth: 1,
             borderRadius: 5,       
-         }
+        }
 
     }
 );
