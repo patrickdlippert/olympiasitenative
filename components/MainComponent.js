@@ -3,6 +3,7 @@ import Home from './HomeComponent';
 import Attractions from './AttractionsComponent';
 import Restaurants from './RestaurantsComponent';
 import Events from './EventsComponent';
+import Resources from './ResourcesComponent';
 import HighlightInfo from './HighlightInfoComponent';
 import ImageGallery from './ImageGalleryComponent';
 import { View, Platform, StyleSheet } from 'react-native';
@@ -101,6 +102,33 @@ const EventNavigator = createStackNavigator(
     }
 );
 
+const ResourcesNavigator = createStackNavigator(
+    {
+        Resources: { 
+            screen: Resources,
+            navigationOptions: ({navigation}) => ({
+                headerLeft: <Icon
+                    name='info-circle'
+                    type='font-awesome-5'
+                    iconStyle={styles.stackIcon}
+                    onPress={() => navigation.toggleDrawer()}
+                />
+            })
+        }
+    },
+    {
+        initialRouteName: 'Resources',
+        defaultNavigationOptions: {
+            headerStyle: {
+                backgroundColor: '#ad9750'
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+                color: '#fff'
+            }
+        }
+    }
+);
 
 
 const HomeNavigator = createStackNavigator(
@@ -179,7 +207,22 @@ const MainNavigator = createDrawerNavigator(
                     />
                 )
             }
+        },
+        Resources: { 
+            screen: ResourcesNavigator,
+            navigationOptions: {
+                drawerIcon: ({tintColor}) => (
+                    <Icon
+                        name='info-circle'
+                        type='font-awesome-5'
+                        size={24}
+                        color={tintColor}
+                    />
+                )
+            }
         }
+
+
     },
     {
         drawerBackgroundColor: '#CEC8FF'

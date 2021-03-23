@@ -7,7 +7,7 @@ import CardCarousel from './CardCarouselComponent';
 import { LinearGradient } from 'expo-linear-gradient';
 import * as Animatable from 'react-native-animatable';
 import { TextInput } from 'react-native-paper';
-
+import KeyboardShift from './KeyboardShift';
 
 
 function RenderSplash(props) {
@@ -201,7 +201,10 @@ class Home extends Component {
                     visible={this.state.showModal}
                     onRequestClose={() => this.toggleModal()}
                 >
-                    <ScrollView>
+                   
+                        <KeyboardShift>
+                        {() => (
+                        <ScrollView>
                         <View style={{ height:600}}>
                             <RenderItem 
                                 item={this.state.promotions.filter(promotion => promotion.featured)[0]} />
@@ -265,7 +268,10 @@ class Home extends Component {
                                 />
                             </View>
                         </View>
-                    </ScrollView>
+                        </ScrollView>
+                        )}
+                        </KeyboardShift>
+
                 </Modal>
 
 
