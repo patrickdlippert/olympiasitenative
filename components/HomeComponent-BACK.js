@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, ScrollView, Image, ImageBackground, StyleSheet, Modal, Alert } from 'react-native';
-import { Card, Button, CheckBox } from 'react-native-elements';
+import { Card, Button } from 'react-native-elements';
 import { PROMOTIONS } from '../shared/promotions';
 import { SPONSORS } from '../shared/sponsors';
 import CardCarousel from './CardCarouselComponent';
@@ -74,7 +74,6 @@ class Home extends Component {
             firstName: '',
             lastName: '',
             email: '',
-            agree: false,
             showModal: false
         };
         this.toggleModal = this.toggleModal.bind(this);
@@ -93,31 +92,12 @@ class Home extends Component {
         this.setState({
             firstName: '',
             lastName: '',
-            email: '',
-            agree: false
+            email: '' 
         });
     }
 
     handleSweepstakes(event) {
-        if (!this.state.agree) {
-            Alert.alert(
-                'Agree to Rules',
-                'Please check "agree" to enter the contest',
-                [
-                    {
-                        text: 'Cancel',
-                        onPress: () => console.log('Cancelled agree alert'),
-                        style: 'cancel'
-                    },
-                    {
-                        text: 'OK',
-                        onPress: () => console.log('OK selected. Trying again.'),
-                    }
-                ],
-                { cancelable: false }
-            );
-            return;
-        } else if (!this.state.firstName) {
+        if (!this.state.firstName) {
             Alert.alert(
                 'First Name Required',
                 'Please enter your first name',
@@ -265,15 +245,7 @@ class Home extends Component {
                                     value = {this.state.email}
                                 />
                             </View>
-
-                            <CheckBox
-                                title="Yes, I’m 21 years or older. I have read and agree to the Official Rules."
-                                center
-                                checked={this.state.agree}
-                                onPress={() => this.setState({agree: !this.state.agree})}
-                                containerStyle={styles.formCheckbox}
-                            />
-
+                            
                             <View style={styles.buttonSection}>
                                 <Button
                                     buttonStyle={styles.buttonSubmit}
@@ -327,11 +299,6 @@ const styles = StyleSheet.create(
             flex: 1,
             flexDirection: 'row',
             margin: 10
-        },    
-        formCheckbox: {
-            margin: 8,
-            marginTop: 12,
-            backgroundColor: null
         },
         buttonSection: {
             width: '80%',

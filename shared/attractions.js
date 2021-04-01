@@ -260,8 +260,8 @@ export const ATTRACTIONS = [
             {
               source: image2_3,
               dimensions: {
-                width: 9,
-                height: 16
+                width: 4,
+                height: 3
               }
             },
             {
