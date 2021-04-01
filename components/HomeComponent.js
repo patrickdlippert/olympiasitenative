@@ -8,6 +8,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import * as Animatable from 'react-native-animatable';
 import { TextInput } from 'react-native-paper';
 import { KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
+import ContestRules from './ContestRulesComponent';
 
 function RenderSplash(props) {
     return (
@@ -75,9 +76,11 @@ class Home extends Component {
             lastName: '',
             email: '',
             agree: false,
-            showModal: false
+            showModal: false,
+            showModalRules: false,
         };
         this.toggleModal = this.toggleModal.bind(this);
+        this.toggleModalRules = this.toggleModalRules.bind(this);
         this.handleSweepstakes = this.handleSweepstakes.bind(this);
     }
 
@@ -87,6 +90,10 @@ class Home extends Component {
 
     toggleModal() {
         this.setState({showModal: !this.state.showModal});
+    }
+
+    toggleModalRules() {
+        this.setState({showModalRules: !this.state.showModalRules});
     }
 
     resetForm() {
@@ -220,6 +227,29 @@ class Home extends Component {
                     visible={this.state.showModal}
                     onRequestClose={() => this.toggleModal()}
                 >
+                    {/* This is a Modal within a Modal for when the user clicks "Official Rules link within
+                    the outer Modal. This is a simple ScrollView with the text for the rules. */}
+                    <Modal
+                        animationType = {"slide"}
+                        transparent={false}
+                        visible={this.state.showModalRules}
+                        onRequestClose={() => this.toggleModalRules()}
+                    >
+                        <ScrollView style={{marginTop:15}}>
+                            <ContestRules/>
+                        </ScrollView>
+                        
+                        <View style={styles.buttonSection}>
+                            <Button
+                                buttonStyle={styles.buttonSubmit}
+                                onPress={() => {
+                                    this.toggleModalRules();
+                                }}
+                                title='Close'
+                            />
+                        </View>
+                    </Modal>
+
                     <KeyboardAwareScrollView>
                         <View style={{ height:600}}>
                             <RenderItem 
@@ -267,8 +297,17 @@ class Home extends Component {
                             </View>
 
                             <CheckBox
-                                title="Yes, I’m 21 years or older. I have read and agree to the Official Rules."
+                              title={ 
+                                    <Text>
+                                    <Text>Yes, I’m 21 years or older. I have read and agree to the </Text>
+                                    <Text
+                                        style={{color: '#5637DD' }} 
+                                        onPress={() => this.toggleModalRules()}> Official Rules.</Text>
+                                    </Text>
+                                }
+
                                 center
+                                checkedColor='#5637DD'
                                 checked={this.state.agree}
                                 onPress={() => this.setState({agree: !this.state.agree})}
                                 containerStyle={styles.formCheckbox}
@@ -336,19 +375,20 @@ const styles = StyleSheet.create(
         buttonSection: {
             width: '80%',
             alignSelf: 'center',
-            marginTop: 10
+            marginTop: 5,
+            marginBottom: 5
          },
          buttonSubmit: {
             backgroundColor: '#5637DD',
             borderColor: '#60106B',
             borderWidth: 1,
-            borderRadius: 5,        
+            borderRadius: 5
         },
         buttonCancel: {
             backgroundColor: '#808080',
             borderColor: '#60106B',
             borderWidth: 1,
-            borderRadius: 5,       
+            borderRadius: 5      
         }
 
     }
