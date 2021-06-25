@@ -23,11 +23,7 @@
     },
     "android": {
       "package": "com.patricklippert.olympiatop10",
-      "versionCode": 1,
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"
