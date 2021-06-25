@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "olympiasitenative",
-    "slug": "olympiasitenative",
+    "name": "Olympia Top 10",
+    "slug": "olympiatop10",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
